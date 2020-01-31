@@ -1,0 +1,35 @@
+#somos_mision {
+  background: #efefef;
+}
+.somos_resumen_container {
+  display: flex;
+}
+.somos_resumen_logo {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  .somos_resumen_logo_wrap {
+    width: 100%;
+  }
+}
+.somos_resumen_context {
+  width: 65%;
+  padding: 30px;
+  p {
+    font-weight: bold;
+  }
+}
+.somos_valor_scard {
+  text-align: center;
+  padding: 15px;
+  i {
+    font-size: 95px;
+    color: $colorblue;
+  }
+}
+.somos_valor_card_title {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+}

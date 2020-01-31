@@ -1,0 +1,76 @@
+#tecno_hdl {
+  height: 70vh;
+}
+.tecno_hdl_mainimage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.tecno_hdl_wrap {
+  z-index: 10;
+  position: relative;
+}
+.tecno_hdl_image_wrap {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.tecno_hdl_container {
+  max-width: 600px;
+  margin: auto;
+}
+.tecno_hdl_maintitle h3 {
+  font-size: 180px;
+  text-align: center;
+  font-family: $fontTitle;
+  color: white;
+}
+
+.tecno_proyecto_single {
+  position: relative;
+  &.center {
+    .tecno_proyecto_swrap {
+      margin: auto;
+    }
+  }
+  &.right {
+    .tecno_proyecto_swrap {
+      margin-left: auto;
+    }
+  }
+}
+.tecno_proyecto_img {
+  position: absolute;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.tecno_proyecto_swrap {
+  position: relative;
+  width: 60%;
+  padding: 90px 40px;
+}
+.tecno_hdl_text p {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.tecno_hdl_action {
+  text-align: center;
+}
+.tecno_proyecto_stitle h5 {
+  font-family: $fontTitle;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tecno_proyecto_sdesc p {
+  color: white;
+  font-weight: bold;
+}
+.tecno_proyecto_img .bg_abs {
+  background: rgba(0, 0, 0, 0.288);
+}
