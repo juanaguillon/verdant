@@ -15,23 +15,31 @@
       <div class="header_container">
         <div class="header_left">
           <div class="header_logo">
-            <img src="./resources/images/verdant_logo.svg" alt="">
+            <a href="/verdant/">
+              <img src="./resources/images/verdant_logo.svg" alt="">
+            </a>
           </div>
         </div>
         <div class="header_right">
+          <button id="header_right_toggle_button" class="g_button square no-fill">
+            <i class="icon-bars"></i>
+          </button>
           <div class="header_menu">
             <ul id="header_menu_list">
               <li>
-                <a href="">HOME</a>
+                <a href="/verdant/">INICIO</a>
               </li>
               <li>
-                <a href="">ABOUT</a>
+                <a href="somos.php">NOSOTROS</a>
               </li>
               <li>
-                <a href="">SHOP</a>
+                <a href="proyecto.php">PROYECTO</a>
               </li>
               <li>
-                <a href="">CONTACT</a>
+                <a href="soluciones.php">SOLUCIONES</a>
+              </li>
+              <li>
+                <a href="tecnologia.php">TECNOLOGÍA</a>
               </li>
             </ul>
           </div>

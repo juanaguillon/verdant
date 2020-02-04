@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
 $fontfolder: "/html_projects/verdant/resources/fonts/";
+
+// $fontfolder: "/verdant/resources/fonts/";
 
 @font-face {
   font-family: "Futura PT";
@@ -28,18 +30,10 @@ $fontfolder: "/html_projects/verdant/resources/fonts/";
   font-style: normal;
 }
 
-
 $icomoon-font-family: "verdant" !default;
 $icomoon-font-path: $fontfolder !default;
 
-
-$icon-instagram: "\e911";
-$icon-whatsapp: "\e912";
-$icon-facebook: "\e913";
-$icon-brand1: "\e913";
-$icon-social1: "\e913";
-$icon-arrow-down: "\e900";
-$icon-check: "\e901";
+$icon-bars: "\e914";
 $icon-atom: "\e902";
 $icon-brain: "\e903";
 $icon-cctv: "\e904";
@@ -55,24 +49,33 @@ $icon-trust: "\e90d";
 $icon-value: "\e90e";
 $icon-video: "\e90f";
 $icon-window: "\e910";
-
-
+$icon-instagram: "\e911";
+$icon-whatsapp: "\e912";
+$icon-facebook: "\e913";
+$icon-arrow-down: "\e900";
+$icon-check: "\e901";
+$icon-cross: "\ea0f";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9m85f0');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9m85f0#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9m85f0') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9m85f0') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9m85f0##{$icomoon-font-family}') format('svg');
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?x4ic4u");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?x4ic4u#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?x4ic4u")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?x4ic4u")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?x4ic4u##{$icomoon-font-family}")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: "#{$icomoon-font-family}" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -85,114 +88,113 @@ $icon-window: "\e910";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram {
+.icon-bars {
   &:before {
-    content: $icon-instagram; 
-  }
-}
-.icon-whatsapp {
-  &:before {
-    content: $icon-whatsapp; 
-  }
-}
-.icon-facebook {
-  &:before {
-    content: $icon-facebook; 
-  }
-}
-.icon-brand1 {
-  &:before {
-    content: $icon-brand1; 
-  }
-}
-.icon-social1 {
-  &:before {
-    content: $icon-social1; 
-  }
-}
-.icon-arrow-down {
-  &:before {
-    content: $icon-arrow-down; 
-  }
-}
-.icon-check {
-  &:before {
-    content: $icon-check; 
+    content: $icon-bars;
   }
 }
 .icon-atom {
   &:before {
-    content: $icon-atom; 
+    content: $icon-atom;
   }
 }
 .icon-brain {
   &:before {
-    content: $icon-brain; 
+    content: $icon-brain;
   }
 }
 .icon-cctv {
   &:before {
-    content: $icon-cctv; 
+    content: $icon-cctv;
   }
 }
 .icon-cold {
   &:before {
-    content: $icon-cold; 
+    content: $icon-cold;
   }
 }
 .icon-human {
   &:before {
-    content: $icon-human; 
+    content: $icon-human;
   }
 }
 .icon-idea {
   &:before {
-    content: $icon-idea; 
+    content: $icon-idea;
   }
 }
 .icon-lock {
   &:before {
-    content: $icon-lock; 
+    content: $icon-lock;
   }
 }
 .icon-plug {
   &:before {
-    content: $icon-plug; 
+    content: $icon-plug;
   }
 }
 .icon-price {
   &:before {
-    content: $icon-price; 
+    content: $icon-price;
   }
 }
 .icon-search {
   &:before {
-    content: $icon-search; 
+    content: $icon-search;
   }
 }
 .icon-team {
   &:before {
-    content: $icon-team; 
+    content: $icon-team;
   }
 }
 .icon-trust {
   &:before {
-    content: $icon-trust; 
+    content: $icon-trust;
   }
 }
 .icon-value {
   &:before {
-    content: $icon-value; 
+    content: $icon-value;
   }
 }
 .icon-video {
   &:before {
-    content: $icon-video; 
+    content: $icon-video;
   }
 }
 .icon-window {
   &:before {
-    content: $icon-window; 
+    content: $icon-window;
   }
 }
-
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross;
+  }
+}

@@ -4,8 +4,8 @@
       <div class="footer_wrap">
         <div class="row">
           <div class="col-md-5">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row footer_items_row">
+              <div class="col-sm-6 footer_col footer_col_left">
                 <ul>
                   <li><a href="">Item 1</a></li>
                   <li><a href="">Item 2</a></li>
@@ -13,7 +13,7 @@
                   <li><a href="">Item 4</a></li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6 footer_col footer_col_right">
                 <ul>
                   <li><a href="">Item 1</a></li>
                   <li><a href="">Item 2</a></li>

@@ -64,7 +64,7 @@
 
       <div class="tecno_porque_context wrap_lg d-flex align-items-center">
         <div class="tecno_porque_context_wrap page_context">
-          <div class="tecno_porque_title">
+          <div class="tecno_porque_title section_title">
             <h3>¿Por qué HDL?</h3>
           </div>
           <div class="tecno_porque_context_desc">

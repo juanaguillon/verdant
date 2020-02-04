@@ -2,3 +2,4 @@ node_modules/
 docs/
 assets/
 *.env
+.vscode/sftp.json

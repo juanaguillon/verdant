@@ -40,9 +40,17 @@
   </section>
 
   <section id="home_domotica" class="general_section">
-    <div class="home_domotica_left_image">
-      <img src="https://www.electricidadllopis.com/wp-content/uploads/2017/03/Servicio-domotica-electricidad-llopis-valenciajpg.jpg" alt="">
+
+    <div class="home_domotica_left_image page_image_circle_wrap">
+      <div class="page_imag_circle_bdotted left"></div>
+      <div class="page_imag_circle_bsolid left"></div>
+      <div class="page_image_circle_container left">
+        <img src="https://www.electricidadllopis.com/wp-content/uploads/2017/03/Servicio-domotica-electricidad-llopis-valenciajpg.jpg" alt="">
+      </div>
     </div>
+
+
+
     <div class="home_domotica_wrap container">
       <div class="col-md-6 offset-md-6">
         <div class="home_domotica_context">
@@ -71,7 +79,7 @@
     <div class="home_soluciones_wrap container">
       <div class="home_soluciones_container">
         <div class="home_soluciones_context">
-          <div class="row">
+          <div class="row justify-content-center">
 
             <div class="col-md-4">
               <div class="home_soluciones_title section_title">
@@ -87,7 +95,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -99,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -111,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -123,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -135,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -166,7 +174,7 @@
               <h3>¿Por qué me debería de interesar?</h3>
             </div>
             <div class="home_interes_description_wrap">
-              <div class="home_interes_description">
+              <div class="home_interes_description _container">
                 <p>La seguridad, el ahorro de energía y el confort son las
                   razones que han llevado a muchas personas a implementar tecnología domótica e inmótica.</p>
               </div>
@@ -175,8 +183,8 @@
         </div>
         <div class="home_interes_cards">
           <div class="home_interes_cards_wrap">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-sm-6">
                 <div class="home_interes_scard">
                   <div class="home_interes_card_number">
                     <span>01</span>
@@ -196,7 +204,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <div class="home_interes_scard">
                   <div class="home_interes_card_number">
                     <span>02</span>
@@ -216,7 +224,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <div class="home_interes_scard">
                   <div class="home_interes_card_number">
                     <span>03</span>
@@ -248,8 +256,8 @@
   <section id="home_tecno" class="general_section">
 
     <div class="home_tecno_left_image page_image_circle_wrap">
-      <div class="page_imag_circle_bdotted left"></div>
-      <div class="page_imag_circle_bsolid left"></div>
+      <div class="page_imag_circle_bdotted left" style="right: -2%;"></div>
+      <div class="page_imag_circle_bsolid left" style="right: -2%;"></div>
       <div class="page_image_circle_container left">
         <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
       </div>
@@ -257,7 +265,7 @@
     <div class="home_tecno_wrap container">
       <div class="home_tecno_container">
         <div class="home_tecno_context">
-          <div class="home_tecno_context_wrap">
+          <div class="home_tecno_context_wrap ">
             <div class="home_tecno_title section_title">
               <h3>Nuestra Tecnología</h3>
             </div>

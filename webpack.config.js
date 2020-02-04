@@ -47,7 +47,7 @@ const webpackBaseConfig = {
         ]
       },
       {
-        test: [/.css$|.scss$/],
+        test: [/.css$|.s(a|c)ss$/],
         use: [
           {
             loader: extractPluginCss.loader,
