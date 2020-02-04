@@ -52,7 +52,7 @@
 
 
     <div class="home_domotica_wrap container">
-      <div class="col-md-6 offset-md-6">
+      <div class="col-lg-6 col-md-7 offset-md-5 offset-lg-6">
         <div class="home_domotica_context">
           <div class="home_domotica_title section_title">
             <h3>¿Qué es la Domótica e Inmótica?</h3>
@@ -81,7 +81,7 @@
         <div class="home_soluciones_context">
           <div class="row justify-content-center">
 
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="home_soluciones_title section_title">
                 <h3>Soluciones Inteligentes</h3>
               </div>
@@ -95,7 +95,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -107,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -119,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -131,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">

@@ -137,6 +137,7 @@ header {
   top: 0;
   left: 0;
   z-index: -1;
+  height: 94vh;
   img {
     width: 100%;
   }
@@ -357,10 +358,13 @@ footer {
 }
 
 @media (max-width: 1140px) {
-  .page_image_circle_wrap {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
+
+  .page_image_circle_container,
+  .page_imag_circle_bdotted,
+  .page_imag_circle_bsolid {
+    width: 55vw;
+    height: 55vw;
+    top: 0;
   }
 }
 
@@ -375,6 +379,7 @@ footer {
     position: fixed;
     z-index: 10;
     top: 0;
+    padding: 18px;
     right: 0;
   }
   .header_menu {
@@ -402,12 +407,38 @@ footer {
       text-align: center;
     }
   }
+
+  .header_wrap {
+    background: rgba(0, 0, 0, 0.91);
+    position: fixed;
+    padding: 0;
+    width: 100%;
+  }
+
+  .header_logo {
+    padding: 13px;
+    width: 108px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   ._container,
   .container {
     padding: 25px 15px !important;
+  }
+
+  .page_banner_img img {
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+  }
+
+  .page_banner_context {
+    width: 90%;
+  }
+
+  .page_banner_title h3 {
+    font-size: 48px;
   }
 
   .footer_items_row .footer_col {
