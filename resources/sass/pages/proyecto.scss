@@ -6,3 +6,9 @@
   max-width: 830px;
   margin: auto;
 }
+
+@media (max-width: 767px) {
+  .proyecto_interes_coleft {
+    margin-bottom: 0px;
+  }
+}

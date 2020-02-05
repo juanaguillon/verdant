@@ -33,3 +33,10 @@
   font-weight: bold;
   color: #000000;
 }
+
+@media ( max-width:767px){
+  .somos_vision_wrap{
+    flex-direction: column-reverse;
+  }
+  
+}

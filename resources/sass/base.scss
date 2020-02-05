@@ -358,7 +358,6 @@ footer {
 }
 
 @media (max-width: 1140px) {
-
   .page_image_circle_container,
   .page_imag_circle_bdotted,
   .page_imag_circle_bsolid {
@@ -425,6 +424,18 @@ footer {
   ._container,
   .container {
     padding: 25px 15px !important;
+  }
+  .page_context{
+    padding: 0;
+  }
+
+  .section_wrap {
+    flex-direction: column;
+    .wrap_sm,
+    .wrap_lg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .page_banner_img img {

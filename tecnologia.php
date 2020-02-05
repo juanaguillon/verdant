@@ -56,8 +56,6 @@
     </div>
   </section>
 
-
-
   <section id="tecno_porque" class="general_section">
     <div class="tecno_porque_wrap section_wrap container">
 
@@ -91,7 +89,7 @@
   </section>
 
   <section id="tecno_porque2" class="general_section">
-    <div class="tecno_porque2_wrap section_wrap container">
+    <div class="tecno_porque2_wrap section_wrap container  flex-md-row flex-column-reverse">
       <div class="tecno_porque2_image wrap_sm page_image_circle_wrap">
         <div class="page_imag_circle_bdotted left"></div>
         <div class="page_imag_circle_bsolid left"></div>
@@ -123,7 +121,7 @@
     <div class="tecno_proyectos_wrap">
       <div class="tecno_proyectos_container">
         <div class="tecno_proyecto_single center">
-          <div class="tecno_proyecto_img">
+          <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
             <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
           </div>
@@ -140,7 +138,7 @@
           </div>
         </div>
         <div class="tecno_proyecto_single left">
-          <div class="tecno_proyecto_img">
+          <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
             <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
           </div>
@@ -161,7 +159,7 @@
           </div>
         </div>
         <div class="tecno_proyecto_single right">
-          <div class="tecno_proyecto_img">
+          <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
             <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
           </div>
@@ -175,12 +173,12 @@
                 monitoreo desde cualquier
                 parte del mundo. Aún si el cable del teléfono/internet es desconectado, los usuarios pueden manejar
                 cada aspecto de su
-                Casa Inteligente gracias a su exible interfaz única.</p>
+                Casa Inteligente gracias a su flexible interfaz única.</p>
             </div>
           </div>
         </div>
         <div class="tecno_proyecto_single left">
-          <div class="tecno_proyecto_img">
+          <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
             <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
           </div>

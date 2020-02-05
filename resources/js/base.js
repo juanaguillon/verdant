@@ -1,3 +1,5 @@
+import "imagefill/src/imagefill";
+
 /**
  * Mostrar/Ocultar el menú de navegación en resposive
  */
@@ -7,6 +9,11 @@ function toggleNavInResponsive() {
   });
 }
 
+function initPlugins(){
+  $(".imagefill_container").imagefill()
+}
+
 window.onload = function() {
   toggleNavInResponsive();
+  initPlugins();
 };

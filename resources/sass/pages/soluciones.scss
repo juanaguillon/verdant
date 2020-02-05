@@ -1,25 +1,37 @@
 .solu_interes_cards_wrap {
   display: flex;
   flex-wrap: wrap;
+}
+.solu_interes_card {
+  width: 33%;
+  padding: 30px;
+  height: 240px;
+}
+.solu_interes_card_iwrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.solu_interes_card_i {
+  padding: 35px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.529);
+  margin-bottom: 17px;
+  i {
+    font-size: 90px;
+    color: $colorgreen;
+  }
+}
+
+@media (max-width: 767px) {
   .solu_interes_card {
-    width: 33%;
-    padding: 30px;
-    height: 240px;
+    width: 50%;
   }
-  .solu_interes_card_iwrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .solu_interes_card_i {
-    padding: 35px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.529);
-    margin-bottom: 17px;
-    i {
-      font-size: 90px;
-      color: $colorgreen;
-    }
+}
+
+@media ( max-width:480px){
+  .solu_interes_card {
+    width: 100%;
   }
 }

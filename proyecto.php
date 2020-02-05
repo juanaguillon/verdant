@@ -38,7 +38,7 @@
         </div>
         <form>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">¿Qué te gustaría integrar?</label>
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Tipo de inmueble</label>
@@ -71,7 +71,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Uso que se le da al inmueble</label>
@@ -88,7 +88,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <label for="">Situación/ Problema que presenta
                   el inmueble (en caso de que existia)</label>
@@ -100,7 +100,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Ingresa el código postal del inmueble</label>
@@ -112,7 +112,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Nombre completo</label>
@@ -123,7 +123,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Correo electrónico</label>
@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <span class="required">*</span>
                 <label for="">Teléfono</label>
@@ -150,7 +150,7 @@
               empresa, ¡envíala junto con el formulario y nosotros la mejoraremos!</p>
           </div>
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
+            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
               <div class="form_label">
                 <label for="">Adjuntar cotización</label>
               </div>

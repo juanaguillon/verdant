@@ -140,8 +140,8 @@
         </div>
         <div class="col-md-8 offset-md-2">
           <div class="somos_valores_cards_wrap">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
                     <i class="icon-value"></i>
@@ -151,7 +151,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
                     <i class="icon-value"></i>
@@ -161,7 +161,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
                     <i class="icon-value"></i>
@@ -171,7 +171,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
                     <i class="icon-value"></i>
@@ -181,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
                     <i class="icon-value"></i>

@@ -1,6 +1,3 @@
-#tecno_hdl {
-  height: 70vh;
-}
 .tecno_hdl_mainimage {
   position: absolute;
   top: 0;
@@ -73,4 +70,10 @@
 }
 .tecno_proyecto_img .bg_abs {
   background: rgba(0, 0, 0, 0.288);
+}
+
+@media (max-width: 767px) {
+  .tecno_proyecto_swrap {
+    padding: 40px 15px;
+  }
 }
