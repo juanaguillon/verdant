@@ -28,9 +28,13 @@
   .solu_interes_card {
     width: 50%;
   }
+
+  #main_soluciones .general_section {
+    padding: 0;
+  }
 }
 
-@media ( max-width:480px){
+@media (max-width: 480px) {
   .solu_interes_card {
     width: 100%;
   }

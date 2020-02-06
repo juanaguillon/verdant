@@ -10,7 +10,7 @@ function toggleNavInResponsive() {
 }
 
 function initPlugins(){
-  $(".imagefill_container").imagefill()
+  // $(".imagefill_container").imagefill()
 }
 
 window.onload = function() {
