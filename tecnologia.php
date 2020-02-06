@@ -109,8 +109,8 @@
               esto, nuestros
               productos
               pueden enfocarse en las tareas que usted necesita que completen,
-              siendo más ecientes y accesibles. HDL es tan exible como tú lo solicites. Desde una funcionalidad
-              especíca de un
+              siendo más ecientes y accesibles. HDL es tan flexible como tú lo solicites. Desde una funcionalidad
+              específica de un
               módulo, hasta el color
               del panel.
             </p>

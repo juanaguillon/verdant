@@ -54,6 +54,7 @@ ul {
   &.square {
     display: flex;
     align-items: center;
+    min-width: inherit;
     justify-content: center;
   }
   &.no-fill {
@@ -88,7 +89,7 @@ header {
   padding: 15px 0;
 }
 .header_logo {
-  width: 138px;
+  width: 215px;
 }
 .header_container {
   display: flex;
@@ -492,7 +493,7 @@ footer {
   }
 
   .header_logo {
-    padding: 13px;
+    padding: 13px 0px;
     width: 108px;
   }
 }
