@@ -15,7 +15,7 @@
             </div>
 
             <div class="page_banner_img">
-              <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+              <img src="./resources/images/image5.jpg" alt="">
             </div>
           </div>
         </div>

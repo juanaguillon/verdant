@@ -16,7 +16,7 @@
             </div>
 
             <div class="page_banner_img">
-              <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+              <img src="./resources/images/image9.jpg" alt="">
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button>ARROW</button>
+          <button><i class="icon-arrow-down"></i></button>
         </div>
       </div>
 
@@ -81,7 +81,7 @@
         <div class="page_imag_circle_bdotted right"></div>
         <div class="page_imag_circle_bsolid right"></div>
         <div class="page_image_circle_container right">
-          <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+          <img src="./resources/images/image2.jpg" alt="">
         </div>
       </div>
 
@@ -94,7 +94,7 @@
         <div class="page_imag_circle_bdotted left"></div>
         <div class="page_imag_circle_bsolid left"></div>
         <div class="page_image_circle_container left">
-          <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+          <img src="./resources/images/image8.jpg" alt="">
         </div>
       </div>
 

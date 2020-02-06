@@ -1,7 +1,7 @@
 <?php require "./_header.php" ?>
 <main id="main_home">
   <section id="page_banner" class="general_section">
-    <div class="page_banner_wrap container">
+    <div class="page_banner_wrap container-fluid">
       <div class="page_banner_container">
         <div class="page_banner_slick">
           <div class="page_banner_slick_i">
@@ -21,8 +21,8 @@
               </div>
             </div>
 
-            <div class="page_banner_img">
-              <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+            <div class="page_banner_img imagefill_">
+              <img src="./resources/images/image5.jpg" alt="">
             </div>
 
 
@@ -32,7 +32,9 @@
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button>ARROW</button>
+          <button>
+            <i class="icon-arrow-down"></i>
+          </button>
         </div>
       </div>
 
@@ -44,12 +46,10 @@
     <div class="home_domotica_left_image page_image_circle_wrap">
       <div class="page_imag_circle_bdotted left"></div>
       <div class="page_imag_circle_bsolid left"></div>
-      <div class="page_image_circle_container left">
-        <img src="https://www.electricidadllopis.com/wp-content/uploads/2017/03/Servicio-domotica-electricidad-llopis-valenciajpg.jpg" alt="">
+      <div class="page_image_circle_container imagefill_ left">
+        <img src="./resources/images/image1.jpg" alt="">
       </div>
     </div>
-
-
 
     <div class="home_domotica_wrap container">
       <div class="col-lg-6 col-md-7 offset-md-5 offset-lg-6">
@@ -68,7 +68,7 @@
               de redes interiores y exteriores de comunicación.</p>
           </div>
           <div class="home_domotica_action">
-            <a href="somos.php" class="g_button">¿Quienes somos?</a>
+            <a href="somos.php" class="g_button has_icon"> <i class="icon-team"></i>¿Quienes somos?</a>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-idea"></i>
+                    <i class="icon-light-alt"></i>
                   </div>
                   <div class="home_solucion_title">
                     <span>Ilumincación</span>
@@ -111,7 +111,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-idea"></i>
+                    <i class="icon-window-parsel"></i>
                   </div>
                   <div class="home_solucion_title">
                     <span>Cortinas y Toldos</span>
@@ -123,7 +123,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-idea"></i>
+                    <i class="icon-temp-alt"></i>
                   </div>
                   <div class="home_solucion_title">
                     <span>Sistemas de Climatización</span>
@@ -135,7 +135,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-idea"></i>
+                    <i class="icon-camera-security-alt"></i>
                   </div>
                   <div class="home_solucion_title">
                     <span>Seguridad y Monitoreo</span>
@@ -147,7 +147,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-idea"></i>
+                    <i class="icon-movie"></i>
                   </div>
                   <div class="home_solucion_title">
                     <span>Multimedia</span>
@@ -161,7 +161,7 @@
       </div>
     </div>
     <div class="home_soluciones_right_image">
-      <img src="https://cdn.pocket-lint.com/r/s/970x/assets/images/144018-phones-review-review-huawei-p20-pro-review-2018-image1-sr0lwmedsp-jpg.webp" alt="">
+      <img src="./resources/images/image2.jpg" alt="">
     </div>
   </section>
 
@@ -191,7 +191,7 @@
                   </div>
                   <div class="home_interes_card_context">
                     <div class="home_interes_card_icon">
-                      <i class="icon-lock"></i>
+                      <i class="icon-password"></i>
                     </div>
                     <div class="home_interes_card_title">
                       <h5>SEGURIDAD</h5>
@@ -258,8 +258,8 @@
     <div class="home_tecno_left_image page_image_circle_wrap">
       <div class="page_imag_circle_bdotted left" style="right: -2%;"></div>
       <div class="page_imag_circle_bsolid left" style="right: -2%;"></div>
-      <div class="page_image_circle_container left">
-        <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+      <div class="page_image_circle_container imagefill_ left">
+        <img src="./resources/images/image3.jpg" alt="">
       </div>
     </div>
     <div class="home_tecno_wrap container">
@@ -283,7 +283,7 @@
               </p>
             </div>
             <div class="home_tecno_button">
-              <a href="tecnologia.php" class="g_button">Descubre más</a>
+              <a href="tecnologia.php" class="g_button has_icon"><i class="icon-search"></i>Descubre más</a>
             </div>
           </div>
         </div>
@@ -324,8 +324,8 @@
     <div class="home_eligen_right_image page_image_circle_wrap">
       <div class="page_imag_circle_bdotted right"></div>
       <div class="page_imag_circle_bsolid right"></div>
-      <div class="page_image_circle_container right">
-        <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+      <div class="page_image_circle_container imagefill_ right">
+        <img src="./resources/images/image4.jpg" alt="">
       </div>
     </div>
 

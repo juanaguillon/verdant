@@ -41,7 +41,15 @@ ul {
   font-weight: 600;
   border: 0;
   transition: all 0.3s;
-
+  &.has_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 20px;
+      margin-right: 9px;
+    }
+  }
   &.square {
     display: flex;
     align-items: center;
@@ -83,9 +91,10 @@ header {
 }
 .header_container {
   display: flex;
-  max-width: 1140px;
+  // max-width: 1140px;
   justify-content: space-between;
   margin: auto;
+  padding: 0 4vw;
 }
 .header_right {
   width: 80%;
@@ -105,6 +114,45 @@ header {
 
 #page_banner {
   overflow: hidden;
+  padding: 0;
+  height: 95vh;
+  &:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    background-image: url(#{$resourcePath}/images/hondas-banner.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: auto 100%;
+    top: 0;
+  }
+}
+.page_banner_wrap {
+  position: relative;
+  height: 100%;
+  display: flex;
+  padding-left: 4vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.page_banner_arrowdown {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  button {
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    justify-content: center;
+    margin: auto;
+    border: 0;
+    color: white;
+  }
 }
 .page_banner_title h3 {
   font-family: $fontTitle;
@@ -137,9 +185,12 @@ header {
   top: 0;
   left: 0;
   z-index: -1;
-  height: 94vh;
+  width: 100vw;
+  height: 100%;
   img {
     width: 100%;
+    height: auto;
+    max-width: inherit;
   }
 }
 .page_banner_container {
@@ -149,12 +200,35 @@ header {
 }
 
 .page_banner_context {
-  width: 40%;
+  width: 25%;
 }
+
 .page_banner_arrow_button {
   text-align: center;
+  // padding-bottom: 15px;
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    width: 57%;
+    height: 13vw;
+    bottom: -14vw;
+    z-index: 2;
+    background: #e7e7e7;
+  }
+  &:after {
+    right: -3vw;
+    transform: rotate(-10deg);
+    transform-origin: left bottom;
+  }
+  &:before {
+    left: -3vw;
+    transform-origin: right bottom;
+    transform: rotate(10deg);
+  }
   button {
     background: $colorgreen;
+    position: relative;
   }
 }
 
@@ -425,7 +499,7 @@ footer {
   .container {
     padding: 25px 15px !important;
   }
-  .page_context{
+  .page_context {
     padding: 0;
   }
 
@@ -464,13 +538,18 @@ footer {
   .page_imag_circle_bsolid {
     display: none;
   }
+  .page_image_circle_wrap {
+    height: auto;
+  }
   .page_image_circle_container {
     width: 100%;
-    position: static;
+    position: relative !important;
     border-radius: 0;
     text-align: center;
     height: inherit;
     max-width: 100%;
+    left: 0 !important;
+    right: 0 !important;
     height: auto;
     img {
       width: auto !important;

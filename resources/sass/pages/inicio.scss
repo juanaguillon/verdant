@@ -284,6 +284,7 @@
   .home_soluciones_right_image {
     position: static;
     width: 100%;
+    transform: none;
     img {
       width: 100%;
       height: auto;
@@ -315,6 +316,10 @@
 
   .home_eligen_container {
     width: 100%;
+  }
+  .home_eligen_right_image {
+    width: 100%;
+    position: static;
   }
 }
 

@@ -22,7 +22,7 @@
             </div>
 
             <div class="page_banner_img">
-              <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+              <img src="./resources/images/image5.jpg" alt="">
             </div>
 
 
@@ -32,7 +32,7 @@
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button>ARROW</button>
+          <button><i class="icon-arrow-down"></i></button>
         </div>
       </div>
 
@@ -42,13 +42,13 @@
   <section id="somos_resumen" class="general_section">
     <div class="somos_resumen_wrap container">
       <div class="somos_resumen_container">
-        <div class="somos_resumen_logo">
+        <div class="_container somos_resumen_logo">
           <div class="somos_resumen_logo_wrap">
             <img src="./resources/images/verdant_logo_color.svg" alt="">
 
           </div>
         </div>
-        <div class="somos_resumen_context page_context">
+        <div class="_container somos_resumen_context page_context">
           <div class="somos_resumen_context_wrap">
             <p>
               Verdant Comfort S.A. de C.V. es una empresa mexicana líder en la elaboración y ejecución de proyectos de
@@ -97,7 +97,7 @@
         <div class="page_imag_circle_bdotted right"></div>
         <div class="page_imag_circle_bsolid right"></div>
         <div class="page_image_circle_container right">
-          <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+          <img src="./resources/images/image6.jpg" alt="">
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@
         <div class="page_imag_circle_bdotted left"></div>
         <div class="page_imag_circle_bsolid left"></div>
         <div class="page_image_circle_container left">
-          <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+          <img src="./resources/images/image7.jpg" alt="">
         </div>
       </div>
 
@@ -144,7 +144,7 @@
               <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
-                    <i class="icon-value"></i>
+                    <i class="icon-hand-brain"></i>
                   </div>
                   <div class="somos_valor_card_title">
                     <span>Responsabilidad</span>
@@ -154,7 +154,7 @@
               <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
-                    <i class="icon-value"></i>
+                    <i class="icon-heart"></i>
                   </div>
                   <div class="somos_valor_card_title">
                     <span>Pasión</span>
@@ -164,7 +164,7 @@
               <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
-                    <i class="icon-value"></i>
+                    <i class="icon-light-brain"></i>
                   </div>
                   <div class="somos_valor_card_title">
                     <span>Innovación</span>
@@ -174,7 +174,7 @@
               <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
-                    <i class="icon-value"></i>
+                    <i class="icon-hand-person"></i>
                   </div>
                   <div class="somos_valor_card_title">
                     <span>Servicio</span>
@@ -184,7 +184,7 @@
               <div class="col-lg-4 col-sm-6">
                 <div class="somos_valor_scard">
                   <div class="somos_valor_card_icon">
-                    <i class="icon-value"></i>
+                    <i class="icon-puzzle"></i>
                   </div>
                   <div class="somos_valor_card_title">
                     <span>Integridad</span>

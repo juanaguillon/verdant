@@ -15,7 +15,7 @@
             </div>
 
             <div class="page_banner_img">
-              <img src="https://newtechnot.com/wp-content/uploads/2019/10/Samsung-Galaxy-Tab-S5-Review-Great-for-streaming-and-gaming.jpg" alt="">
+              <img src="./resources/images/image5.jpg" alt="">
             </div>
           </div>
         </div>
@@ -23,7 +23,7 @@
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button>ARROW</button>
+          <button><i class="icon-arrow-down"></i></button>
         </div>
       </div>
 
@@ -40,7 +40,7 @@
         <div class="page_imag_circle_bdotted left"></div>
         <div class="page_imag_circle_bsolid left"></div>
         <div class="page_image_circle_container left">
-          <img src="https://previews.123rf.com/images/chagin/chagin1305/chagin130500312/19729838-group-of-happy-business-people-in-a-meeting-at-office.jpg" alt="">
+          <img src="./resources/images/image8.jpg" alt="">
         </div>
       </div>
 
@@ -75,7 +75,7 @@
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-hand-heart"></i>
               </div>
               <div class="solu_interes_card_text">
                 <span>Mejora tu calidad de vida</span>
@@ -85,53 +85,56 @@
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-clock"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Ahorra tiempo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="solu_interes_card">
+            <div class="solu_interes_card_iwrap">
+              <div class="solu_interes_card_i">
+                <i class="icon-security"></i>
+              </div>
+              <div class="solu_interes_card_text">
+                <span>Mejora tu seguridad</span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-hand-money"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Inversión a futuro</span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-person-arrows"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Un entorno totalmente a tu medida</span>
               </div>
             </div>
           </div>
+
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-tree"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Tiende a lo ecológico</span>
               </div>
             </div>
           </div>
-          <div class="solu_interes_card">
-            <div class="solu_interes_card_iwrap">
-              <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
-              </div>
-              <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         <p class="font-weight-bold text-center">Esto lo logramos a través de la operación intuitiva, avanzada e inteligente de las distintas funciones del
@@ -141,50 +144,52 @@
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-temp"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>
+                  Sistemas de Climatización
+                </span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-light"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Iluminación</span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-window"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Sistemas de persianas y toldos</span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-window-music"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Sistemas Multimedia</span>
               </div>
             </div>
           </div>
           <div class="solu_interes_card">
             <div class="solu_interes_card_iwrap">
               <div class="solu_interes_card_i">
-                <i class="icon-trust"></i>
+                <i class="icon-camera-security"></i>
               </div>
               <div class="solu_interes_card_text">
-                <span>Mejora tu calidad de vida</span>
+                <span>Seguridad y monitoreo</span>
               </div>
             </div>
           </div>

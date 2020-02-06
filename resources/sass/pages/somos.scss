@@ -22,7 +22,7 @@
 }
 .somos_valor_scard {
   text-align: center;
-  padding: 15px;
+  padding: 25px 15px;
   i {
     font-size: 95px;
     color: $colorblue;
@@ -34,9 +34,24 @@
   color: #000000;
 }
 
-@media ( max-width:767px){
-  .somos_vision_wrap{
+@media (max-width: 767px) {
+  .somos_vision_wrap {
     flex-direction: column-reverse;
   }
-  
+  .somos_resumen_wrap {
+    padding: 0 !important;
+  }
+  .somos_resumen_container {
+    flex-direction: column;
+    & > div {
+      width: 100%;
+      // padding: 20px 0px;
+    }
+  }
+  .somos_resumen_logo {
+    justify-content: center;
+  }
+  .somos_resumen_logo_wrap {
+    width: 50% !important;
+  }
 }
