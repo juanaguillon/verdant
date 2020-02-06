@@ -16,7 +16,7 @@
                     Nosotros te ayudamos</p>
                 </div>
                 <div class="page_banner_action">
-                  <a class="g_button" href="#">SOLICITAR COTIZACIÓN</a>
+                  <a class="g_button" href="proyecto.php">SOLICITAR COTIZACIÓN</a>
                 </div>
               </div>
             </div>

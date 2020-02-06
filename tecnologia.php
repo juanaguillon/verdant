@@ -2,7 +2,7 @@
 
 <main id="main_tecno">
   <section id="page_banner" class="general_section">
-    <div class="page_banner_wrap container">
+    <div class="page_banner_wrap container-fluid">
       <div class="page_banner_container">
         <div class="page_banner_slick">
           <div class="page_banner_slick_i">
@@ -10,21 +10,24 @@
             <div class="page_banner_context">
               <div class="page_banner_context_wrap">
                 <div class="page_banner_title">
-                  <h3>Soluciones</h3>
+                  <h3>Nuestra Tecnología</h3>
                 </div>
               </div>
             </div>
 
-            <div class="page_banner_img">
+            <div class="page_banner_img imagefill_">
               <img src="./resources/images/image9.jpg" alt="">
             </div>
+
           </div>
         </div>
       </div>
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button><i class="icon-arrow-down"></i></button>
+          <button>
+            <i class="icon-arrow-down"></i>
+          </button>
         </div>
       </div>
 

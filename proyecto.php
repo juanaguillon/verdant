@@ -1,7 +1,8 @@
 <?php require "./_header.php" ?>
 <main id="main_proyecto">
+
   <section id="page_banner" class="general_section">
-    <div class="page_banner_wrap container">
+    <div class="page_banner_wrap container-fluid">
       <div class="page_banner_container">
         <div class="page_banner_slick">
           <div class="page_banner_slick_i">
@@ -14,21 +15,25 @@
               </div>
             </div>
 
-            <div class="page_banner_img">
+            <div class="page_banner_img imagefill_">
               <img src="./resources/images/image5.jpg" alt="">
             </div>
+
           </div>
         </div>
       </div>
 
       <div class="page_banner_arrowdown">
         <div class="page_banner_arrow_button">
-          <button>ARROW</button>
+          <button>
+            <i class="icon-arrow-down"></i>
+          </button>
         </div>
       </div>
 
     </div>
   </section>
+
 
   <div id="proyecto_interesado" class="general_section">
     <div class="proyecto_interesado_wrap container">
