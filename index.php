@@ -68,7 +68,7 @@
               de redes interiores y exteriores de comunicación.</p>
           </div>
           <div class="home_domotica_action">
-            <a href="somos.php" class="g_button has_icon"> <i class="icon-team"></i>¿Quienes somos?</a>
+            <a href="somos.php" class="g_button">¿Quienes somos?</a>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
                     <i class="icon-light-alt"></i>
                   </div>
                   <div class="home_solucion_title">
-                    <span>Ilumincación</span>
+                    <span>Iluminación</span>
                   </div>
                 </div>
               </div>
@@ -283,7 +283,7 @@
               </p>
             </div>
             <div class="home_tecno_button">
-              <a href="tecnologia.php" class="g_button has_icon"><i class="icon-search"></i>Descubre más</a>
+              <a href="tecnologia.php" class="g_button">Descubre más</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <?php
-$mainUrl = "/verdant/";
-// $mainUrl = "/html_projects/verdant/";
+$mainUrl = "/verdant";
+// $mainUrl = "/html_projects/verdant";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,8 @@ $mainUrl = "/verdant/";
         <div class="header_left">
           <div class="header_logo">
             <a href="<?= $mainUrl ?>">
-              <img src="./resources/images/verdant_logo.svg" alt="">
+              <img class="logo_white" src="./resources/images/verdant_logo.svg" alt="">
+              <img class="logo_color" src="./resources/images/verdant_logo_color.svg" alt="">
             </a>
           </div>
         </div>

@@ -16,12 +16,15 @@
 }
 .solu_interes_card_i {
   padding: 35px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.529);
-  margin-bottom: 17px;
+  border: 1px solid #e4e4e4;
+  background: #f7f7f7;
   i {
     font-size: 90px;
     color: $colorgreen;
   }
+}
+.solu_interes_card_text {
+  margin-top: 7px;
 }
 
 @media (max-width: 767px) {

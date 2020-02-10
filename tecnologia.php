@@ -39,7 +39,7 @@
 
       <div class="tecno_hdl_image_wrap">
         <div class="bg_abs" style="background: rgba(180, 0, 255, 0.48)"></div>
-        <img src="https://www.vshotels.com/admin/haydarpashapalace/img/rooms/c56665d66b83d270d2245130d2c92f1a3.jpg" alt="">
+        <img src="./resources/images/tecnologia_1.jpg" alt="">
       </div>
     </div>
     <div class="tecno_hdl_wrap container">
@@ -84,7 +84,7 @@
         <div class="page_imag_circle_bdotted right"></div>
         <div class="page_imag_circle_bsolid right"></div>
         <div class="page_image_circle_container right">
-          <img src="./resources/images/image2.jpg" alt="">
+          <img src="./resources/images/hdl.jpg" alt="">
         </div>
       </div>
 
@@ -97,7 +97,7 @@
         <div class="page_imag_circle_bdotted left"></div>
         <div class="page_imag_circle_bsolid left"></div>
         <div class="page_image_circle_container left">
-          <img src="./resources/images/image8.jpg" alt="">
+          <img src="./resources/images/hdl_2.jpg" alt="">
         </div>
       </div>
 
@@ -109,7 +109,7 @@
               esto, nuestros
               productos
               pueden enfocarse en las tareas que usted necesita que completen,
-              siendo más ecientes y accesibles. HDL es tan flexible como tú lo solicites. Desde una funcionalidad
+              siendo más eficientes y accesibles. HDL es tan flexible como tú lo solicites. Desde una funcionalidad
               específica de un
               módulo, hasta el color
               del panel.
@@ -126,7 +126,7 @@
         <div class="tecno_proyecto_single center">
           <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
-            <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
+            <img src="./resources/images/hospitalidad.jpg" alt="">
           </div>
           <div class="tecno_proyecto_swrap">
             <div class="tecno_proyecto_stitle">
@@ -143,7 +143,7 @@
         <div class="tecno_proyecto_single left">
           <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
-            <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
+            <img src="./resources/images/aeropuerto.jpg" alt="">
           </div>
           <div class="tecno_proyecto_swrap">
             <div class="tecno_proyecto_stitle">
@@ -164,7 +164,7 @@
         <div class="tecno_proyecto_single right">
           <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
-            <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
+            <img src="./resources/images/mexican_villa.jpg" alt="">
           </div>
           <div class="tecno_proyecto_swrap">
             <div class="tecno_proyecto_stitle">
@@ -183,7 +183,7 @@
         <div class="tecno_proyecto_single left">
           <div class="tecno_proyecto_img imagefill_container">
             <div class="bg_abs"></div>
-            <img src="https://www.ariesinterioristas.com/wp-content/uploads/2017/09/domotica-hogar-aries-interioristas.jpeg" alt="">
+            <img src="./resources/images/savory_grill.jpg" alt="">
           </div>
           <div class="tecno_proyecto_swrap">
             <div class="tecno_proyecto_stitle">
