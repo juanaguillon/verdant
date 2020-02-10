@@ -11,7 +11,6 @@ a {
   }
 }
 img {
-  
   max-width: 100%;
 }
 ul {
@@ -98,6 +97,7 @@ header {
   .logo_color {
     display: none;
   }
+
   &.fixed {
     position: fixed;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.231);
@@ -112,6 +112,16 @@ header {
     }
     #header_menu_list li a {
       color: $colorblue;
+      padding: 0 25px;
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      transition: color 0.3s;
+      &:hover {
+        color: $colorgreen;
+      }
     }
 
     .logo_color {
@@ -124,6 +134,45 @@ header {
 }
 .header_wrap {
   padding: 15px 0;
+  background: rgba(0, 0, 0, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 1)),
+    color-stop(56%, rgba(0, 0, 0, 0.44)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
 }
 .header_logo {
   width: 215px;
@@ -153,7 +202,38 @@ header {
   li a {
     color: white;
     font-weight: bold;
-    padding: 0 25px;
+    position: relative;
+    overflow-x: hidden;
+    padding: 15px 25px;
+    display: block;
+
+    &:after,
+    &:before {
+      content: "";
+      height: 2px;
+      background: white;
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    &:after {
+      width: 30%;
+      right: 100%;
+      bottom: 3px;
+    }
+    &:before {
+      width: 50%;
+      bottom: 10px;
+      left: 100%;
+    }
+    &:hover {
+      &:before {
+        left: 25%;
+      }
+      &:after {
+        right: 35%;
+      }
+    }
   }
 }
 
@@ -396,6 +476,7 @@ header {
   align-items: center;
   .required {
     margin-right: 7px;
+    margin-left: 7px;
     font-size: 19px;
     color: rgb(185, 36, 36);
     font-weight: bold;
@@ -408,6 +489,72 @@ header {
 .page_stronger {
   font-weight: bold;
   color: $colorblue;
+}
+
+input[type="file"],
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+.page_input_file {
+  position: relative;
+  cursor: pointer !important;
+
+  .page_input_icon {
+    font-size: 21px;
+    color: $colorblue;
+  }
+  input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+    z-index: 30;
+    opacity: 0;
+  }
+  .page_input_wrap {
+    padding: 10px;
+    display: inline-block;
+    display: inline-flex;
+    background: whitesmoke;
+    border: 1px solid #e2e2e2;
+  }
+  span {
+    display: block;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+
+.page_cbox_wrap {
+  display: inline-flex;
+  padding: 2px;
+  background: #f1f1f1;
+  border-radius: 2px;
+  margin-right: 4px;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    &:checked + i {
+      opacity: 1;
+    }
+  }
+  i {
+    opacity: 0;
+    color: $colorblue;
+  }
 }
 
 footer {
@@ -432,7 +579,7 @@ footer {
 .footer_rights_wrap {
   text-align: center;
   background: $colorblue;
-  padding: 15px;
+  padding: 15px 25px;
 }
 .footer_rights_container {
   display: flex;
@@ -471,7 +618,13 @@ footer {
     margin: 0 15px;
     padding: 10px;
     line-height: 1;
+    transition: .3s all;
+    border: 1px solid white;
     border-radius: 50%;
+    &:hover{
+      background: $colorgreen;
+      border-color: white;
+    }
   }
 }
 
@@ -501,9 +654,12 @@ footer {
     display: inline-flex;
     position: fixed;
     z-index: 10;
+    outline: none;
+    color: $colorblue;
     top: 0;
-    padding: 18px;
+    padding: 21px 18px;
     right: 0;
+    border: none;
   }
   .header_menu {
     position: fixed;
@@ -517,25 +673,37 @@ footer {
     transition: transform 0.5s;
     transform: translateX(100%);
     top: 0;
-    background: rgba(0, 0, 0, 0.89);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 3px #0000007a;
     &.show {
       transform: translateX(0%);
     }
   }
   #header_menu_list {
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: initial;
     li a {
       display: block;
+      color: $colorblue;
       padding: 16px;
       text-align: center;
     }
   }
 
   .header_wrap {
-    background: rgba(0, 0, 0, 0.91);
+    background: rgb(255, 255, 255);
     position: fixed;
+    box-shadow: 0 0 3px #0000007a;
     padding: 0;
     width: 100%;
+    .logo_white {
+      display: none;
+    }
+    .logo_color {
+      display: block;
+    }
   }
 
   .header_logo {
@@ -547,7 +715,7 @@ footer {
 @media (max-width: 767px) {
   ._container,
   .container {
-    padding: 25px 15px !important;
+    padding: 25px 25px !important;
   }
   .page_context {
     padding: 0;

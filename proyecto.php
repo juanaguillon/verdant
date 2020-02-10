@@ -41,132 +41,184 @@
         <div class="section_title">
           <h3>¿Estás interesado en convertir tu inmueble en uno inteligente?</h3>
         </div>
-        <form>
+        <form action="" id="form_proyecto_interesado">
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">¿Qué te gustaría integrar?</label>
+            <div class="col-md-6">
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title">
+                  <h4>¿Qué solución te gustaría integrar?</h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <ul class="page_list_checkbox">
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="integrity1">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="integrity1">Iluminación</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="integrity2">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="integrity2">Cortinas y Toldos</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="integrity3">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="integrity3">Sistemas de climatización</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="integrity4">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="integrity4">Seguridad y monitoreo</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="integrity5">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="integrity5">Sistema de multimedia</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title">
+                  <h4>¿Cuántos inmuebles desea transformar?</h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <input type="number" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title">
+                  <h4>¿Qué tipo de inmueble desea transformar?</h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <ul class="page_list_checkbox">
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="transform1">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="transform1">Casa</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="transform2">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="transform2">Departamento</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="transform3">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="transform3">Edificio</label>
+                    </li>
+                    <li>
+                      <div class="page_cbox_wrap">
+                        <input type="checkbox" name="" id="transform3">
+                        <i class="icon-check"></i>
+                      </div>
+                      <label for="transform3">Oficina</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title">
+                  <h4>¿Qué uso le da al inmueble?</h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <ul class="page_list_radio">
+                    <li>
+                      <input type="radio" name="usoinmueble" id="useidal1">
+                      <label for="useidal1">Vivienda</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="usoinmueble" id="useidal2">
+                      <label for="useidal2">Laboral</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="usoinmueble" id="useidal3">
+                      <label for="useidal3">Comercial</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="usoinmueble" id="useidal3">
+                      <label for="useidal3">Hospitalidad</label>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <select multiple class="form-control" name="" id="">
-                <option value="Iluminación">Iluminación</option>
-                <option value="Cortina y toldso">Cortina y toldso</option>
-                <option value="Sistema de Climatización">Sistema de Climatización</option>
-                <option value="Seguridad y monitoreo">Seguridad y monitoreo</option>
-                <option value="Sistema Multimedia">Sistema Multimedia</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Tipo de inmueble</label>
+            <div class="col-md-6">
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <h4>Nombre completo</h4>
+                  <span class="required">*</span>
+                </div>
+                <div class="proyecto_interes_list">
+                  <input type="text" placeholder="Escriba su nombre o el de su compañía" name="" id="" class="form-control">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <select multiple class="form-control" name="" id="">
-                <option value="Casa">Casa</option>
-                <option value="Departamento">Departamento</option>
-                <option value="Edificio">Edificio</option>
-                <option value="Oficina">Oficina</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Uso que se le da al inmueble</label>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <h4>Correo electrónico</h4>
+                  <span class="required">*</span>
+                </div>
+                <div class="proyecto_interes_list">
+                  <input type="email" placeholder="ejemplo@dominio.com" name="" id="" class="form-control">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <select multiple class="form-control" name="" id="">
-                <option value="Vivienda">Vivienda</option>
-                <option value="Laboral">Laboral</option>
-                <option value="Comercial">Comercial</option>
-                <option value="Hospitalidad">Hospitalidad</option>
-              </select>
-            </div>
-          </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <h4>Ingrese código postal del inmueble</h4>
+                  <span class="required">*</span>
+                </div>
+                <div class="proyecto_interes_list">
+                  <input type="text" placeholder="" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <h4>Situación/Problema que se presenta en el inmueble (en caso de que exista)</h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <textarea name="" id="" cols="30" rows="4" class="form-control textarea"></textarea>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <label for="">Situación/ Problema que presenta
-                  el inmueble (en caso de que existia)</label>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="text" class="form-control">
-            </div>
-          </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <h4>Estamos seguros de que nuestros precios son os mejores, si ya cuentas con una cotización de otra empresa, <strong>¡Envíala juanto con el formulario y nosotros la mejoraremos!</strong>
+                  </h4>
+                </div>
+                <div class="proyecto_interes_list">
+                  <div class="page_input_file">
+                    <input type="file">
+                    <div class="page_input_wrap">
+                      <div class="page_input_icon">
+                        <i class="icon-attach_file"></i>
+                      </div>
+                      <div class="page_input_label">Adjunta la cotización</div>
+                    </div>
+                    <span>El archivo no debe ser superior a 10MB</span>
 
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Ingresa el código postal del inmueble</label>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="text" class="form-control">
-            </div>
-          </div>
+                  </div>
+                </div>
 
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Nombre completo</label>
               </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Correo electrónico</label>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="email" class="form-control">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <span class="required">*</span>
-                <label for="">Teléfono</label>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="tel" class="form-control">
-            </div>
-          </div>
 
-          <div class="section_parraf">
-            <p>Estamos seguros de que nuestros precios son los mejores, si ya cuentas con una cotización de otra
-              empresa, ¡envíala junto con el formulario y nosotros la mejoraremos!</p>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col proyecto_interes_coleft">
-              <div class="form_label">
-                <label for="">Adjuntar cotización</label>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center proyecto_interes_col">
-              <input type="number" class="form-control">
             </div>
           </div>
-
-          <button class="g_button">Enviar</button>
-
         </form>
 
       </div>

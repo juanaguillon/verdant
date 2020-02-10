@@ -19,18 +19,37 @@ function initPlugins() {
 function setFixedHeaderInScroll() {
   var header = $("header");
   let $document = $(document);
-  
-  if ($document.scrollTop() > 100) {
-    header.addClass("fixed");
-  } else {
-    header.removeClass("fixed");
-  }
 
-  $document.scroll(function() {
+  if ($(window).width() > 990) {
     if ($document.scrollTop() > 100) {
       header.addClass("fixed");
     } else {
       header.removeClass("fixed");
+    }
+
+    $document.scroll(function() {
+      if ($document.scrollTop() > 100) {
+        header.addClass("fixed");
+      } else {
+        header.removeClass("fixed");
+      }
+    });
+  } else {
+    $document.unbind("scroll");
+  }
+
+  $(window).on("resize", function() {
+    if ($(window).width() < 991) {
+      $document.unbind("scroll");
+      header.removeClass("fixed");
+    } else {
+      $document.scroll(function() {
+        if ($document.scrollTop() > 100) {
+          header.addClass("fixed");
+        } else {
+          header.removeClass("fixed");
+        }
+      });
     }
   });
 }

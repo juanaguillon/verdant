@@ -2,7 +2,7 @@
 
   <div class="footer_container container">
     <div class="footer_wrap">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-md-5">
           <div class="row footer_items_row">
             <div class="col-sm-6 footer_col footer_col_left">
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="col-md-7">
-          <div class="row">
+          <div class="row no-gutters">
 
             <div class="col-md-6">
               <div class="footer_news">
@@ -52,8 +52,8 @@
                 <div class="footer_redes_list">
                   <ul>
                     <li><a href=""><i class="icon-facebook"></i></a></li>
-                    <li><a href=""><i class="icon-whatsapp"></i></a></li>
                     <li><a href=""><i class="icon-instagram"></i></a></li>
+                    <li><a href=""><i class="icon-whatsapp"></i></a></li>
                   </ul>
                 </div>
               </div>

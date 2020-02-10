@@ -1,6 +1,12 @@
 #main_tecno .page_banner_img img {
   margin-top: -0%;
 }
+#main_tecno {
+  .page_banner_arrow_button:before,
+  .page_banner_arrow_button:after {
+    background: #b32ee7;
+  }
+}
 #tecno_proyectos {
   padding: 0;
 }
@@ -93,7 +99,7 @@
   }
 
   .tecno_proyecto_swrap {
-    padding: 40px 15px;
+    padding: 40px 25px;
     width: 100%;
   }
 

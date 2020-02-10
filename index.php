@@ -52,7 +52,7 @@
     </div>
 
     <div class="home_domotica_wrap container">
-      <div class="col-lg-6 col-md-7 offset-md-5 offset-lg-6">
+      <div class="col-lg-6 col-md-7 offset-md-5 offset-lg-6 p-0">
         <div class="home_domotica_context">
           <div class="home_domotica_title section_title">
             <h3>¿Qué es la Domótica e Inmótica?</h3>
