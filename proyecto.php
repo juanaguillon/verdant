@@ -46,6 +46,7 @@
             <div class="col-md-6">
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title">
+                  <i class="icon-support"></i>
                   <h4>¿Qué solución te gustaría integrar?</h4>
                 </div>
                 <div class="proyecto_interes_list">
@@ -90,6 +91,7 @@
               </div>
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title">
+                  <i class="icon-clipboard"></i>
                   <h4>¿Cuántos inmuebles desea transformar?</h4>
                 </div>
                 <div class="proyecto_interes_list">
@@ -98,6 +100,7 @@
               </div>
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title">
+                  <i class="icon-wardrobe"></i>
                   <h4>¿Qué tipo de inmueble desea transformar?</h4>
                 </div>
                 <div class="proyecto_interes_list">
@@ -135,6 +138,7 @@
               </div>
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title">
+                  <i class="icon-residential"></i>
                   <h4>¿Qué uso le da al inmueble?</h4>
                 </div>
                 <div class="proyecto_interes_list">
@@ -162,6 +166,7 @@
             <div class="col-md-6">
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title form_label">
+                  <i class="icon-man"></i>
                   <h4>Nombre completo</h4>
                   <span class="required">*</span>
                 </div>
@@ -171,6 +176,7 @@
               </div>
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title form_label">
+                  <i class="icon-mail"></i>
                   <h4>Correo electrónico</h4>
                   <span class="required">*</span>
                 </div>
@@ -180,6 +186,7 @@
               </div>
               <div class="proyecto_interes_wrapc">
                 <div class="proyecto_interes_title form_label">
+                  <i class="icon-scan"></i>
                   <h4>Ingrese código postal del inmueble</h4>
                   <span class="required">*</span>
                 </div>
@@ -217,6 +224,12 @@
 
               </div>
 
+
+            </div>
+            <div class="col-12">
+              <div class="proyecto_interes_wrapc text-center">
+                <button class="g_button">Enviar cotización</button>
+              </div>
             </div>
           </div>
         </form>

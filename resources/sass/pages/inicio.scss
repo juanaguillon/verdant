@@ -51,11 +51,13 @@
   flex-direction: column;
   width: 100%;
   border-radius: 3px;
+  align-items: center;
   min-height: 210px;
+  justify-content: center;
 }
 .home_solucion_icon i {
   font-size: 76px;
-  color: #70c429;
+  color: $colorgreen;
 }
 .home_solucion_title {
   margin-top: 15px;

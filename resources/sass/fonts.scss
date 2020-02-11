@@ -31,6 +31,13 @@ $fontfolder: "#{$resourcePath}/fonts/";
 $icomoon-font-family: "verdant" !default;
 $icomoon-font-path: $fontfolder !default;
 
+$icon-clipboard: "\e924";
+$icon-residential: "\e926";
+$icon-mail: "\e920";
+$icon-man: "\e921";
+$icon-scan: "\e922";
+$icon-support: "\e923";
+$icon-wardrobe: "\e925";
 $icon-attach_file: "\e919";
 $icon-hand-money: "\e902";
 $icon-hand-heart: "\e903";
@@ -68,14 +75,14 @@ $icon-bars: "\e914";
 
 @font-face {
   font-family: "#{$icomoon-font-family}";
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ho93g5");
-  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ho93g5#iefix")
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tyj92g");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tyj92g#iefix")
       format("embedded-opentype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ho93g5")
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tyj92g")
       format("truetype"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ho93g5")
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tyj92g")
       format("woff"),
-    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ho93g5##{$icomoon-font-family}")
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tyj92g##{$icomoon-font-family}")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -98,6 +105,41 @@ $icon-bars: "\e914";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clipboard {
+  &:before {
+    content: $icon-clipboard;
+  }
+}
+.icon-residential {
+  &:before {
+    content: $icon-residential;
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail;
+  }
+}
+.icon-man {
+  &:before {
+    content: $icon-man;
+  }
+}
+.icon-scan {
+  &:before {
+    content: $icon-scan;
+  }
+}
+.icon-support {
+  &:before {
+    content: $icon-support;
+  }
+}
+.icon-wardrobe {
+  &:before {
+    content: $icon-wardrobe;
+  }
+}
 .icon-attach_file {
   &:before {
     content: $icon-attach_file;
