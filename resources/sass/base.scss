@@ -206,7 +206,7 @@ header {
     overflow-x: hidden;
     padding: 15px 25px;
     display: block;
-
+    font-size: 15px;
     &:after,
     &:before {
       content: "";
@@ -618,10 +618,10 @@ footer {
     margin: 0 15px;
     padding: 10px;
     line-height: 1;
-    transition: .3s all;
+    transition: 0.3s all;
     border: 1px solid white;
     border-radius: 50%;
-    &:hover{
+    &:hover {
       background: $colorgreen;
       border-color: white;
     }

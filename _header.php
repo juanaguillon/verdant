@@ -46,6 +46,9 @@ $mainUrl = "/html_projects/verdant";
               <li>
                 <a href="<?= $mainUrl ?>/tecnologia.php">TECNOLOGÍA</a>
               </li>
+              <li>
+                <a href="<?= $mainUrl ?>/contacto.php">CONTACTO</a>
+              </li>
             </ul>
           </div>
         </div>
