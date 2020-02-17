@@ -1,6 +1,6 @@
 <?php
-// $mainUrl = "/verdant";
-$mainUrl = "/html_projects/verdant";
+$mainUrl = "/Verdant/verdant";
+// $mainUrl = "/html_projects/verdant";
 ?>
 <!DOCTYPE html>
 <html lang="en">

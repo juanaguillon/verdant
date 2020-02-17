@@ -1,4 +1,20 @@
 <?php require "./_header.php" ?>
+<style>
+  
+#aro {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 1000;
+  animation-duration: 3s;   
+  animation-timing-function: ease-in; 
+  animation-name:bombillo;
+}
+
+@keyframes bombillo {
+  to {
+    stroke-dashoffset: 0;   
+  }
+}
+</style>
 <main id="main_home">
   <section id="page_banner" class="general_section">
     <div class="page_banner_wrap container-fluid">
@@ -99,7 +115,18 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-light-alt"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.26 111.86" class="iluminacion-icono soluciones-icono"><defs>
+                  
+                  </defs><title>iluminacion-icono</title><g id="Capa_2" data-name="Capa 2"><g id="Layer_1" data-name="Layer 1">
+                  <path class="cls-1" id="aro" stroke="#87b420" d="M46.71,24.11a28.81,28.81,0,0,0-19,50.4c4.56,4.55,4.14,14.28,4,14.38a1.71,1.71,0,0,0,.52,1.35,1.89,1.89,0,0,0,1.24.51H59.85a1.72,1.72,0,0,0,1.25-.51,2,2,0,0,0,.51-1.35c0-.1-.51-9.83,4-14.38.1-.11.21-.21.31-.31A28.73,28.73,0,0,0,46.71,24.11ZM63.27,71.82c-.1.1-.31.31-.31.41-4,4.35-4.76,11.49-4.86,14.9H35.23c-.11-3.41-.83-10.86-5.18-15.31a25.2,25.2,0,1,1,33.22,0Z"/>
+                  <path class="cls-1 " d="M46.61,31.46a1.76,1.76,0,0,0,0,3.52A18.83,18.83,0,0,1,65.44,53.81a1.76,1.76,0,1,0,3.52,0A22.25,22.25,0,0,0,46.61,31.46Z"/>
+                  <path class="cls-1" d="M58.1,92.72h-23a4.35,4.35,0,0,0,0,8.69H58a4.45,4.45,0,0,0,4.45-4.34A4.37,4.37,0,0,0,58.1,92.72Zm0,5.07h-23a.82.82,0,0,1-.83-.83.76.76,0,0,1,.83-.83H58a.81.81,0,0,1,.83.83A.74.74,0,0,1,58.1,97.79Z"/>
+                  <path class="cls-1" d="M54.68,103.17H38.54a4.35,4.35,0,1,0,0,8.69H54.68A4.37,4.37,0,0,0,59,107.52,4.31,4.31,0,0,0,54.68,103.17Zm0,5.07H38.54a.81.81,0,0,1-.83-.83.76.76,0,0,1,.83-.82H54.68a.83.83,0,1,1,0,1.65Z"/>
+                  <path class="cls-1" d="M46.61,15.52a1.75,1.75,0,0,0,1.76-1.76v-12a1.76,1.76,0,1,0-3.52,0v12A1.82,1.82,0,0,0,46.61,15.52Z"/>
+                  <path class="cls-1" d="M75.89,8.9a1.67,1.67,0,0,0-2.38.41l-6.62,9.94a1.7,1.7,0,0,0,.42,2.48,1.63,1.63,0,0,0,2.38-.52l6.62-9.93A1.6,1.6,0,0,0,75.89,8.9Z"/>
+                  <path class="cls-1" d="M25.6,21.63a1.72,1.72,0,0,0,.93-.31,1.82,1.82,0,0,0,.52-2.49l-6.41-10a1.8,1.8,0,0,0-3,2l6.42,10A1.71,1.71,0,0,0,25.6,21.63Z"/>
+                  <path class="cls-1" d="M13.08,32.6,2.63,26.9a1.82,1.82,0,0,0-2.38.73A1.65,1.65,0,0,0,1,30L11.43,35.7a2.48,2.48,0,0,0,.82.21A1.72,1.72,0,0,0,13.81,35,1.82,1.82,0,0,0,13.08,32.6Z"/>
+                  <path class="cls-1" d="M93.07,27.63a1.82,1.82,0,0,0-2.38-.73L80.14,32.6A1.82,1.82,0,0,0,79.41,35a1.71,1.71,0,0,0,1.56.93,1.94,1.94,0,0,0,.82-.21L92.35,30A1.81,1.81,0,0,0,93.07,27.63Z"/></g></g></svg>
                   </div>
                   <div class="home_solucion_title">
                     <span>Iluminación</span>
@@ -111,7 +138,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-window-parsel"></i>
+                  <img src="resources/images/cortinas-icono.svg" alt="">
                   </div>
                   <div class="home_solucion_title">
                     <span>Cortinas y Toldos</span>
@@ -123,7 +150,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-temp-alt"></i>
+                  <img src="resources/images/climatizacion-icono.svg" alt="">
                   </div>
                   <div class="home_solucion_title">
                     <span>Sistemas de Climatización</span>
@@ -135,7 +162,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-camera-security-alt"></i>
+                  <img src="resources/images/seguridad-icono.svg" alt="">
                   </div>
                   <div class="home_solucion_title">
                     <span>Seguridad y Monitoreo</span>
@@ -147,7 +174,7 @@
               <div class="home_solucion_card">
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon">
-                    <i class="icon-movie"></i>
+                  <img src="resources/images/multimedia-icono.svg" alt="">
                   </div>
                   <div class="home_solucion_title">
                     <span>Multimedia</span>

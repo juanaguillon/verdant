@@ -1,0 +1,60 @@
+@media (max-width:1366px){
+
+}
+
+.soluciones-icono{
+    height: 70px; 
+}
+
+    
+
+
+@media (max-width:768px){
+    #page_banner{ 
+        &::before{
+            background-position-x: -180px;
+        }
+    }
+    .page_banner_title h3{
+        text-shadow: 0px 0px 6px #2f2f2f;;
+    }
+    .page_banner_img {
+        background: #323232;
+        img{
+            opacity: 0.7;  
+        }
+    }
+}
+
+@media (max-width:550px){
+    #page_banner{
+        &::before{
+            background-position-x: -250px;
+            opacity: 0.9;  
+        }
+    } 
+    .page_banner_context{
+        width:100%;
+    }
+    .page_banner_img{
+        display: flex;
+    justify-content: center;
+    }
+}
+
+@media (max-width:450px){
+    #page_banner{
+        &::before{
+            background-position-x: -300px;
+        }
+    } 
+    
+}
+
+@media (max-width:375px){
+#page_banner{
+        &::before{
+            background-position-x: -400px; 
+        }
+    } 
+}

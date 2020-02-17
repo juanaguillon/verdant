@@ -6,6 +6,23 @@
   justify-content: center;
 }
 
+
+#aro {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-duration: 3s;   
+  animation-timing-function: ease-in;
+  animation-name:bombillo;
+}
+
+@keyframes bombillo {
+  to {
+    stroke-dashoffset: 0;   
+  }
+}
+
+
+
 .home_domotica_left_image {
   position: absolute;
   width: 43vw;
@@ -58,6 +75,12 @@
 .home_solucion_icon i {
   font-size: 76px;
   color: $colorgreen;
+}
+
+.home_solucion_icon{
+  img{
+    height: 70px;
+  }
 }
 .home_solucion_title {
   margin-top: 15px;
