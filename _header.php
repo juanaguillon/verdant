@@ -1,6 +1,6 @@
 <?php
-$mainUrl = "/Verdant/verdant";
-// $mainUrl = "/html_projects/verdant";
+// $mainUrl = "/Verdant/verdant";
+$mainUrl = "/verdant";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +48,9 @@ $mainUrl = "/Verdant/verdant";
               </li>
               <li>
                 <a href="<?= $mainUrl ?>/contacto.php">CONTACTO</a>
+              </li>
+              <li>
+                <a class="contacto-whastapp" target="_blank" href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios."><i class="icon-whatsapp"></i></a>
               </li>
             </ul>
           </div>

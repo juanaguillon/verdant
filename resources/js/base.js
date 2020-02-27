@@ -1,4 +1,6 @@
+import "imagesloaded/imagesloaded";
 import "imagefill/src/imagefill";
+
 
 /**
  * Mostrar/Ocultar el menú de navegación en resposive
@@ -10,7 +12,7 @@ function toggleNavInResponsive() {
 }
 
 function initPlugins() {
-  // $(".imagefill_").imagefill({ runOnce: true na});
+   $(".imagefill_").imagefill();
 }
 
 /**
