@@ -2,8 +2,8 @@
 
   <div class="footer_container container">
     <div class="footer_wrap">
-      <div class="row no-gutters">
-        <div class="col-md-5">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="row footer_items_row">
             <div class="col-sm-6 footer_col footer_col_left">
               <ul>
@@ -21,9 +21,22 @@
             </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="row no-gutters">
-
+        <div class="col-sm-6 col-md-8 col-lg-9">
+          <div class="row">
+          <div class="col-md-6">
+              <div class="footer_redes">
+                <div class="footer_redes_text">
+                  <span>¡Síguenos en nuestras redes sociales</span>
+                </div>
+                <div class="footer_redes_list">
+                  <ul>
+                  <li><a href="https://www.facebook.com/Verdantcomfortmx/" target="_blank"><i class="icon-facebook"></i></a></li>
+                      <li><a href="" class="instagram-verdant" target="_blank"><i class="icon-instagram"></i></a></li>
+                      <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6">
               <div class="footer_news">
                 <div class="footer_news_text">
@@ -32,10 +45,10 @@
                 <div class="footer_news_form">
                   <form id="footer_news_form">
                     <div class="form-group">
-                      <input class="page_input" type="text" placeholder="Nombre">
+                      <input class="form-control" type="text" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                      <input class="page_input" type="text" placeholder="E-mail">
+                      <input class="form-control" type="text" placeholder="Correo electrónico">
                     </div>
                     <div class="form-group">
                       <button class="g_button light">Enviar</button>
@@ -44,20 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="footer_redes">
-                <div class="footer_redes_text">
-                  <span>¡Síguenos en nuestras redes sociales</span>
-                </div>
-                <div class="footer_redes_list">
-                  <ul>
-                    <li><a href=""><i class="icon-facebook"></i></a></li>
-                    <li><a href=""><i class="icon-instagram"></i></a></li>
-                    <li><a href=""><i class="icon-whatsapp"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
 

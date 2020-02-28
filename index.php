@@ -16,16 +16,16 @@
 </style>
 <main id="main_home">
   <section id="page_banner" class="general_section banner-home">
-    <div class="page_banner_wrap container-fluid">
+    <div class="page_banner_wrap container-fluid p-0">
 
       <div class="page_banner_container">
         <div class="page_banner_slick">
-               <div class="page_banner_context">
+                <div class="page_banner_context col-md-5 col-lg-4 p-0 d-flex align-items-center justify-content-center">
                   <div class="page_banner_context_wrap">
-                  <div class="page_banner_title home-title">
-                        <!-- <h3>Tecnología para tu Vida</h3> -->
-                        <h3>Es hora de renovar tu hogar</h3>
-                      </div>
+                    <div class="page_banner_title home-title">
+                          <!-- <h3>Tecnología para tu Vida</h3> -->
+                          <h3>Es hora de renovar tu hogar</h3>
+                        </div>
                     <div class="formulario-home">
                       
                     <form>
@@ -36,9 +36,9 @@
                         </div>
                         <div class="form-group">
                           
-                          <input type="email" class="form-control" id="inputAddress2" placeholder="Correo electronico">
+                          <input type="email" class="form-control" id="inputAddress2" placeholder="Correo electrónico">
                         </div>
-                        <div class="form-row">
+                        <div class="form-row custom-field-responsive-banner">
                           <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
                           </div>
@@ -51,7 +51,7 @@
                         <div class="form-group col-md-12">
                             
                             <select id="inputState" class="form-control">
-                              <option selected>Area de interes</option>
+                              <option selected disabled>Area de interés</option>
                               <option>Iluminación</option>
                               <option>Cortinas y Toldos</option>
                               <option>Sistemas de Climatización</option>
@@ -70,19 +70,20 @@
 
                   </div>
                 </div>
-                <div class="page_banner_img banner-carousel ">
-                <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="resources/images/smart-home.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Tecnología para tu Vida</h2>
-                      </div>
-                  </div>
+
+                <div class="page_banner_img banner-carousel col-md-7 col-lg-8 p-0">
+                  <div class="slide-banner-home">
+                        <div class="imagefill_" style="width:100%;height:100vh;">
+                          <img src="resources/images/smart-home-media-2.jpg" alt="">
+                        </div>
+                        <div class="texto-banner-home">
+                            <h2>Tecnología para tu Vida</h2>
+                        </div>
+                    </div>
 
                   <div class="slide-banner-home">
                       <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="./resources/images/image5.jpg" alt="">
+                        <img src="./resources/images/iluminacion.jpg" alt="">
                       </div>
                       <div class="texto-banner-home">
                           <h2>Iluminación</h2>
@@ -91,7 +92,7 @@
 
                   <div class="slide-banner-home">
                       <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="https://image.shutterstock.com/z/stock-photo-a-couple-sitting-on-the-sofa-controls-all-the-functions-of-the-house-such-as-wi-fi-heating-1036268476.jpg" alt="">
+                        <img src="resources/images/tecnologia.jpg" alt="">
                       </div>
                       <div class="texto-banner-home">
                           <h2>Multimedia</h2>
@@ -100,7 +101,7 @@
 
                   <div class="slide-banner-home">
                       <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="https://image.shutterstock.com/z/stock-photo-man-looking-at-home-security-cameras-on-tablet-computer-586486958.jpg" alt="">
+                        <img src="resources/images/seguridad-camaras.jpg" alt="">
                       </div>
                       <div class="texto-banner-home">
                           <h2>Seguridad y Monitoreo</h2>
@@ -108,7 +109,7 @@
                   </div>
                   <div class="slide-banner-home">
                       <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="https://image.shutterstock.com/z/stock-photo-heavy-duty-radiator-central-heating-781785535.jpg" alt="">
+                        <img src="resources/images/aire-acondicionado.jpg" alt="">
                       </div>
                       <div class="texto-banner-home">
                           <h2>Sistemas de Climatización</h2>
@@ -116,7 +117,7 @@
                   </div>
                   <div class="slide-banner-home">
                       <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="https://image.shutterstock.com/z/stock-photo-white-elegant-living-room-with-fireplace-tv-coffee-table-and-couch-panorama-1014119725.jpg" alt="">
+                        <img src="resources/images/cortina-automatica.jpg" alt="">
                       </div>
                       <div class="texto-banner-home">
                           <h2>Cortinas y Toldos</h2>

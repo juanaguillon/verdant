@@ -2,8 +2,9 @@ const path = require("path");
 const extractPluginCss = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
-const Dotenv = require("dotenv-webpack");
 const webpack = require("webpack");
+const Dotenv = require("dotenv-webpack");
+
 
 const webpackBaseConfig = {
   // externals: {

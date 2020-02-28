@@ -135,9 +135,10 @@ header {
 }
 
 .contacto-whastapp{
-  display: flex !important;  
+  display: flex !important; 
+  justify-content: center;    
   padding: 0 10px !important;
-  &:before{
+  &:before{  
     display: none;
   }
   &:after{
@@ -260,14 +261,20 @@ header {
   min-height: 650px;
   &:before {
     position: absolute;
-    left: 0;
+    // left: 0;
     content:"";
-    background: url(#{$resourcePath}/images/hondas-banner.svg) no-repeat right;
+    // background: url(#{$resourcePath}/images/hondas-banner.svg) no-repeat right;
     height: 100%;
-    width: 50vw;
+    // width: 50vw;
     background-size: auto 100%; 
     top: 0;
     z-index:2;
+  }
+  &:before{
+    background: #3737b5 !important; 
+    width:32% ;
+    // min-width:410px;
+    left: 0 !important;  
   }
 }
 .page_banner_wrap {
@@ -368,7 +375,7 @@ header {
   }
 }
 
-@media (max-width:690px){
+@media (max-width:768px){   
   
   .banner-carousel{
     button{
@@ -391,26 +398,29 @@ header {
 @media (max-width:1140px){
   #page_banner:before{
     left: -5%;
-    width: 60%; 
+    width: 35%; 
   }
 }
 
 
 @media (max-width:991px){
-  #page_banner:before{
-    left: -25%;
-    width: 80%;
-    top: 30px;
-    height: calc(100% - 60px); 
+  #page_banner{
+    min-height: auto;
+    &:before{
+      left: -25%;
+      width: 40%;
+      top: 30px;
+      height: calc(100% - 60px);   
+    }
   }
 }
 
 @media (max-width:768px){
   #page_banner:before{
-    left: -5%;
-    width: 100%;
+    left: -5%;   
   }
 }
+
 
 
 
@@ -707,6 +717,8 @@ footer {
 }
 .footer_redes_list ul {
   display: flex;
+  width: max-content;
+  margin:auto;
   a {
     color: $colorgreen;
     font-size: 23px;
@@ -731,6 +743,7 @@ footer {
   margin-bottom: 15px;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 1140px) {

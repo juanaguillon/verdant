@@ -17,7 +17,7 @@
             </div>
 
             <div class="page_banner_img imagefill_">
-              <img src="./resources/images/image5.jpg" alt="">
+              <img src="resources\images\contacto-banner-verdant.jpg" alt="">
             </div>
 
           </div>
@@ -108,9 +108,9 @@
                   </div>
                   <div class="contacto_data_field">
                     <ul class="contacto_redes">
-                      <li><a href=""><i class="icon-facebook"></i></a></li>
-                      <li><a href=""><i class="icon-instagram"></i></a></li>
-                      <li><a href=""><i class="icon-whatsapp"></i></a></li>
+                      <li><a href="https://www.facebook.com/Verdantcomfortmx/" target="_blank"><i class="icon-facebook"></i></a></li>
+                      <li><a href="" class="instagram-verdant" target="_blank"><i class="icon-instagram"></i></a></li>
+                      <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li>
                     </ul>
                   </div>
                 </div>

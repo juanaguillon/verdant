@@ -198,27 +198,40 @@
     margin: auto 5%;
   }
 }
+
+
 .banner-home{
+  min-height: 620px !important;
   &:before{
-    background: #3737b5 !important; 
-    width:32% !important;
-    min-width:410px;
-    left: 0 !important;
+    // background: #3737b5 !important; 
+    // width:32% !important;
+    // min-width:410px;
+    // left: 0 !important;
+    display: none;
   }
-  .banner-carousel{
-    width: 68%;
-    margin-left: 32%;     
+  .page_banner_container{
+    height: auto !important;
   }
+  
   .page_banner_slick{
     margin-top: -5vh;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .page_banner_context{
-    max-width: 330px;  
+  .page_banner_context_wrap{
+    padding: 0 30px;
   }
+   .page_banner_context{
+    //  max-width: 330px;  
+    width:100% !important;
+    min-width:inherit !important;
+    background: #3737b5 !important;
+   }
   .home-title{
     h3{
       font-size: 30px;  
       margin-bottom: 20px; 
+      text-align:center;
       &:after{
           display: none;
       }
@@ -232,8 +245,21 @@
      margin: auto;
        
   } 
+  .page_banner_img{
+    position: relative;
+  }
   .page_banner_wrap{
-    padding-left: 45px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:1600px){
+  .custom-field-responsive-banner{
+    .form-group{
+      width: 100%;
+      max-width: 100%;
+      flex: 100%;
+    }
   }
 }
 
@@ -241,42 +267,67 @@
 .slide-banner-home{
     display: flex !important;
     align-items: center;
-    justify-content: center;  
+    justify-content: left;
     .texto-banner-home {
       position: absolute;
       color: white;
-      margin-top: -3.5vh;
       padding: 5px 18px;
-      background: rgba(138, 189, 75, 0.9);  
+      background: rgba(138, 189, 75, 0.9);
+      margin-left: 30px;
+      border-radius: 6px;  
       h2{
         // text-shadow: 0px 0px 4px rgba(43, 43, 43, 0.678);
         font-weight: 700;   
         font-family: "Futura PT";
-        margin-bottom:0 ;  
-        // &:after{
-        //   position: absolute;
-        //   content: "";
-        //   width: 80%;
-        //   margin: auto;
-        //   height: 2px;
-        //   top: calc(100% + 10px);
-        //   left: 10%;
-        //   background: #8abd4b;
-        // }
+        margin-bottom:0 ;
+        max-width: 300px;
+        font-size: 45px;
       }
   }
 }
 
 
-@media (max-width:1140px){
-  .banner-home .banner-carousel{
-    width:calc(100% - 410px);margin-left: 410px;
-  }
-  .slide-banner-home{
+// @media (max-width:1140px){
+//   .banner-home .banner-carousel{
+//     width:calc(100% - 410px);margin-left: 410px;
+
+//   }
+//   .slide-banner-home{
+//       .texto-banner-home{
+         
+//         text-align: center;
+//       }
+//   }
+// }
+
+@media (max-width:768px){
+  .banner-home{
+    margin-top: 58px;
+    height: auto !important;
+    .banner-carousel{
+      height: 250px;
+      .imagefill_{
+        height: 250px !important;  
+        
+      }  
       .texto-banner-home{
         max-width: 300px;
-        text-align: center;
+        h2{
+          font-size: 30px;
+          max-width: 100%;
+        }
       }
+    }
+    .page_banner_context_wrap{
+      padding: 30px 30px 85px 30px;
+    }
+    .formulario-home{
+      max-width: 100%;
+    }
+  }
+  .page_banner_slick{
+    flex-direction: column-reverse;
+    margin-top: 0 !important;  
   }
 }
 

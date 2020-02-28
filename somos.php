@@ -15,7 +15,7 @@
             </div>
 
             <div class="page_banner_img imagefill_">
-              <img src="./resources/images/image5.jpg" alt="">
+              <img src="resources/images/nosotros-banner-verdant.jpg" alt="">
             </div>
 
           </div>
