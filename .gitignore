@@ -3,3 +3,4 @@ docs/
 assets/
 *.env
 .vscode/sftp.json
+includes/config.php

@@ -20,112 +20,115 @@
 
       <div class="page_banner_container">
         <div class="page_banner_slick">
-                <div class="page_banner_context col-md-5 col-lg-4 p-0 d-flex align-items-center justify-content-center">
-                  <div class="page_banner_context_wrap">
-                    <div class="page_banner_title home-title">
-                          <!-- <h3>Tecnología para tu Vida</h3> -->
-                          <h3>Es hora de renovar tu hogar</h3>
-                        </div>
-                    <div class="formulario-home">
-                      
-                    <form>
-                        
-                        <div class="form-group">
-                          
-                          <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
-                        </div>
-                        <div class="form-group">
-                          
-                          <input type="email" class="form-control" id="inputAddress2" placeholder="Correo electrónico">
-                        </div>
-                        <div class="form-row custom-field-responsive-banner">
-                          <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <input type="tel" class="form-control" id="inputCity" placeholder="Teléfono">
-                          </div>
-                          
-                        </div>
-                        <div class="form-row">
-                        <div class="form-group col-md-12">
-                            
-                            <select id="inputState" class="form-control">
-                              <option selected disabled>Area de interés</option>
-                              <option>Iluminación</option>
-                              <option>Cortinas y Toldos</option>
-                              <option>Sistemas de Climatización</option>
-                              <option>Seguridad y Monitoreo</option>
-                              <option>Multimedia</option>
-                            </select>
-                            
-                          </div>
-                        </div>
-                        <button class="g_button" type="submit">Solicitar cotización</button>
-                      </form>
-                      
-                      
-                    </div>
-                    
+          <div class="page_banner_context col-md-5 col-lg-4 p-0 d-flex align-items-center justify-content-center">
+            <div class="page_banner_context_wrap">
+              <div class="page_banner_title home-title">
+                <!-- <h3>Tecnología para tu Vida</h3> -->
+                <h3>Es hora de renovar tu hogar</h3>
+              </div>
+              <div class="formulario-home">
 
+                <form action="./includes/envioform.php" method="post">
+
+                  <div class="form-group">
+
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Nombre" name="nombre">
                   </div>
-                </div>
+                  <div class="form-group">
 
-                <div class="page_banner_img banner-carousel col-md-7 col-lg-8 p-0">
-                  <div class="slide-banner-home">
-                        <div class="imagefill_" style="width:100%;height:100vh;">
-                          <img src="resources/images/smart-home-media-2.jpg" alt="">
-                        </div>
-                        <div class="texto-banner-home">
-                            <h2>Tecnología para tu Vida</h2>
-                        </div>
+                    <input type="email" class="form-control" id="inputAddress2" placeholder="Correo electrónico" name="email">
+                  </div>
+                  <div class="form-row custom-field-responsive-banner">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="inputCity" placeholder="Ciudad" name="ciudad">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="tel" class="form-control" id="inputCity" placeholder="Teléfono" name="cell">
                     </div>
 
-                  <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="./resources/images/iluminacion.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Iluminación</h2>
-                      </div>
                   </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
 
-                  <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="resources/images/tecnologia.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Multimedia</h2>
-                      </div>
-                  </div>
+                      <select id="inputState" class="form-control" name="area">
+                        <option selected disabled>Area de interés</option>
+                        <option>Iluminación</option>
+                        <option>Cortinas y Toldos</option>
+                        <option>Sistemas de Climatización</option>
+                        <option>Seguridad y Monitoreo</option>
+                        <option>Multimedia</option>
+                      </select>
 
-                  <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="resources/images/seguridad-camaras.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Seguridad y Monitoreo</h2>
-                      </div>
+                    </div>
                   </div>
-                  <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="resources/images/aire-acondicionado.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Sistemas de Climatización</h2>
-                      </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Describe brevemente tu solicitud" name="mensaje">
                   </div>
-                  <div class="slide-banner-home">
-                      <div class="imagefill_" style="width:100%;height:100vh;">
-                        <img src="resources/images/cortina-automatica.jpg" alt="">
-                      </div>
-                      <div class="texto-banner-home">
-                          <h2>Cortinas y Toldos</h2>
-                      </div>
-                  </div>
-                </div>
+                  <button class="g_button" type="submit">Solicitar cotización</button>
+                </form>
+
+
+              </div>
+
+
             </div>
-            
+          </div>
+
+          <div class="page_banner_img banner-carousel col-md-7 col-lg-8 p-0">
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="resources/images/smart-home-media-2.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Tecnología para tu Vida</h2>
+              </div>
+            </div>
+
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="./resources/images/iluminacion.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Iluminación</h2>
+              </div>
+            </div>
+
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="resources/images/tecnologia.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Multimedia</h2>
+              </div>
+            </div>
+
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="resources/images/seguridad-camaras.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Seguridad y Monitoreo</h2>
+              </div>
+            </div>
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="resources/images/aire-acondicionado.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Sistemas de Climatización</h2>
+              </div>
+            </div>
+            <div class="slide-banner-home">
+              <div class="imagefill_" style="width:100%;height:100vh;">
+                <img src="resources/images/cortina-automatica.jpg" alt="">
+              </div>
+              <div class="texto-banner-home">
+                <h2>Cortinas y Toldos</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="page_banner_arrowdown">
@@ -149,39 +152,39 @@
       </div>
     </div> -->
 
-    
+
 
     <div class="home_domotica_wrap container">
       <div class="row">
-            <div class="col-lg-6 col-md-5 d-flex align-items-center">
-              <div class="video-home"> 
-              <video muted preload loop autoplay>
-                  <source src="resources/videos/animacion-verdant_3.mp4" type="video/mp4">
-                  <source src="resources/videos/animacion-verdant_3.ogv" type="video/ogv">
-                  <source src="resources/videos/animacion-verdant_3.webm" type="video/webm">
-              </video>
+        <div class="col-lg-6 col-md-5 d-flex align-items-center">
+          <div class="video-home">
+            <video muted preload loop autoplay>
+              <source src="resources/videos/animacion-verdant_3.mp4" type="video/mp4">
+              <source src="resources/videos/animacion-verdant_3.ogv" type="video/ogv">
+              <source src="resources/videos/animacion-verdant_3.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7 p-0">
+          <div class="home_domotica_context">
+            <div class="home_domotica_title section_title">
+              <h3>¿Qué es la Domótica e Inmótica?</h3>
+            </div>
+            <div class="home_domotica_desc">
+              <p>La Domótica es el conjunto de sistemas que automatizan las diferentes funcionalidades de una vivienda
+                mientras que la
+                Inmótica
+                es la implementación de dichas tecnologías en edificios. <br><br>
+                Ambas aportan servicios de gestión energética, seguridad, bienestar y comuncación, y que pueden estar
+                integrados por
+                medio
+                de redes interiores y exteriores de comunicación.</p>
+            </div>
+            <div class="home_domotica_action">
+              <a href="somos.php" class="g_button">¿Quienes somos?</a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-7 p-0">
-            <div class="home_domotica_context">
-              <div class="home_domotica_title section_title">
-                <h3>¿Qué es la Domótica e Inmótica?</h3>
-              </div>
-              <div class="home_domotica_desc">
-                <p>La Domótica es el conjunto de sistemas que automatizan las diferentes funcionalidades de una vivienda
-                  mientras que la
-                  Inmótica
-                  es la implementación de dichas tecnologías en edificios. <br><br>
-                  Ambas aportan servicios de gestión energética, seguridad, bienestar y comuncación, y que pueden estar
-                  integrados por
-                  medio
-                  de redes interiores y exteriores de comunicación.</p>
-              </div>
-              <div class="home_domotica_action">
-                <a href="somos.php" class="g_button">¿Quienes somos?</a>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -211,22 +214,22 @@
                 <div class="home_solucion_card_wrap">
                   <div class="home_solucion_icon fadeInUp animated ">
 
-                          <svg version="1.1" id="Capa_1" height="70px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340 333" style="fill:#87b420;" xml:space="preserve">
-                            <style type="text/css">
+                    <svg version="1.1" id="Capa_1" height="70px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340 333" style="fill:#87b420;" xml:space="preserve">
+                      <style type="text/css">
 
-                            </style>
-                            <path class="st0 bombillo" d="M66,133.5c0,0-21-57,18-67s49-4,65,8s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48
+                      </style>
+                      <path class="st0 bombillo" d="M66,133.5c0,0-21-57,18-67s49-4,65,8s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48
                         s11-61-11-80s-79-7-70-41C46,146.5,53,128.5,66,133.5z" />
-                            <path class="st1 bombillo" d="M197.7,294.4h-66.4c-4.2,0-7.7-3.4-7.7-7.7v-0.2c0-4.2,3.4-7.7,7.7-7.7h66.4c4.2,0,7.7,3.4,7.7,7.7v0.2
+                      <path class="st1 bombillo" d="M197.7,294.4h-66.4c-4.2,0-7.7-3.4-7.7-7.7v-0.2c0-4.2,3.4-7.7,7.7-7.7h66.4c4.2,0,7.7,3.4,7.7,7.7v0.2
                             C205.4,291,201.9,294.4,197.7,294.4z" />
-                                                <path class="st2 bombillo" d="M188.1,324.8h-47.2c-4.2,0-7.7-3.4-7.7-7.7V317c0-4.2,3.4-7.7,7.7-7.7h47.2c4.2,0,7.7,3.4,7.7,7.7v0.2
+                      <path class="st2 bombillo" d="M188.1,324.8h-47.2c-4.2,0-7.7-3.4-7.7-7.7V317c0-4.2,3.4-7.7,7.7-7.7h47.2c4.2,0,7.7,3.4,7.7,7.7v0.2
                             C195.8,321.4,192.3,324.8,188.1,324.8z" />
-                                                <path class="st1 bombillo" d="M216.8,216.5c-0.3,0.3-1,1-1,1.3c-11.4,12.3-14.3,31.7-15,43.1c-0.1,1.8-1.6,3.1-3.3,3.1h-64.6
+                      <path class="st1 bombillo" d="M216.8,216.5c-0.3,0.3-1,1-1,1.3c-11.4,12.3-14.3,31.7-15,43.1c-0.1,1.8-1.6,3.1-3.3,3.1h-64.6
                             c-1.8,0-3.2-1.4-3.3-3.2c-0.7-11.5-3.6-31.8-15.9-44.4c-17-14.8-27-36.3-27-59.1c0-43.4,35-78.4,78.4-78.4s78.4,35,78.4,78.4
                             C243.5,180.1,233.9,201.7,216.8,216.5z" />
-                                        <g>
-                                          <g>
-                                            <path class="st3 bombillo" d="M164.5,107.1c1.6,0,3.1,0.1,4.7,0.2c0.7,0.1,1.5,0.1,2.2,0.2c0.2,0,0.3,0,0.5,0.1c0.7,0.1-0.8-0.1-0.7-0.1
+                      <g>
+                        <g>
+                          <path class="st3 bombillo" d="M164.5,107.1c1.6,0,3.1,0.1,4.7,0.2c0.7,0.1,1.5,0.1,2.2,0.2c0.2,0,0.3,0,0.5,0.1c0.7,0.1-0.8-0.1-0.7-0.1
                         c0.4,0.1,0.9,0.1,1.4,0.2c2.9,0.5,5.9,1.2,8.7,2.1c1.4,0.5,2.8,1,4.2,1.5c1,0.4-1.1-0.5-0.2-0.1c0.3,0.1,0.6,0.3,0.9,0.4
                         c0.7,0.3,1.4,0.7,2.1,1c2.6,1.3,5.2,2.9,7.6,4.6c0.5,0.4,1.1,0.8,1.6,1.2c0.8,0.6-1-0.8,0,0c0.3,0.2,0.6,0.5,0.9,0.7
                         c1.1,0.9,2.2,1.9,3.3,2.9c1.1,1,2.1,2.1,3.1,3.2c0.5,0.5,0.9,1.1,1.4,1.6c0.2,0.3,0.4,0.5,0.6,0.8c0.1,0.1,0.2,0.3,0.3,0.4
@@ -235,41 +238,41 @@
                         c0,0.4,0.1,0.8,0.1,1.2c0.2,1.8,0.2,3.6,0.2,5.4c0,3.1,2.7,6,5.9,5.9c3.2-0.1,5.9-2.6,5.9-5.9c0-13.3-4.1-26.6-11.8-37.5
                         c-7.8-11-18.7-19.3-31.4-24.1c-7.1-2.6-14.7-3.9-22.3-3.9c-3.1,0-6,2.7-5.9,5.9C158.8,104.4,161.2,107.1,164.5,107.1L164.5,107.1z
                         " />
-                              </g>
-                            </g>
-                            <g>
-                              <g>
-                                <path class="st3 bombillo-line" d="M294.5,82.8c-9.7,5.1-19.3,10.2-29,15.3c-1.4,0.7-2.7,1.4-4.1,2.2c-2.1,1.1-2.9,4.2-1.6,6.2
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st3 bombillo-line" d="M294.5,82.8c-9.7,5.1-19.3,10.2-29,15.3c-1.4,0.7-2.7,1.4-4.1,2.2c-2.1,1.1-2.9,4.2-1.6,6.2
                                 c1.4,2.1,3.9,2.8,6.2,1.6c9.7-5.1,19.3-10.2,29-15.3c1.4-0.7,2.7-1.4,4.1-2.2c2.1-1.1,2.9-4.2,1.6-6.2
                                 C299.3,82.3,296.7,81.6,294.5,82.8L294.5,82.8z" />
-                                                  </g>
-                                                </g>
-                                                <g>
-                                                  <g>
-                                                    <path class="st3 bombillo-line" d="M244.2,31c-6.1,9-12.3,18.1-18.4,27.1c-0.9,1.3-1.7,2.6-2.6,3.8c-1.3,2-0.4,5.1,1.6,6.2
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st3 bombillo-line" d="M244.2,31c-6.1,9-12.3,18.1-18.4,27.1c-0.9,1.3-1.7,2.6-2.6,3.8c-1.3,2-0.4,5.1,1.6,6.2
                                 c2.3,1.2,4.8,0.5,6.2-1.6c6.1-9,12.3-18.1,18.4-27.1c0.9-1.3,1.7-2.6,2.6-3.8c1.3-2,0.4-5.1-1.6-6.2
                                 C248.1,28.2,245.6,28.9,244.2,31L244.2,31z" />
-                                                  </g>
-                                                </g>
-                                                <g>
-                                                  <g>
-                                                    <path class="st3 bombillo-line" d="M30.6,90.6c9.7,5.1,19.3,10.2,29,15.3c1.4,0.7,2.7,1.4,4.1,2.2c2.1,1.1,5,0.6,6.2-1.6c1.1-2.1,0.6-5-1.6-6.2
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st3 bombillo-line" d="M30.6,90.6c9.7,5.1,19.3,10.2,29,15.3c1.4,0.7,2.7,1.4,4.1,2.2c2.1,1.1,5,0.6,6.2-1.6c1.1-2.1,0.6-5-1.6-6.2
                                 c-9.7-5.1-19.3-10.2-29-15.3c-1.4-0.7-2.7-1.4-4.1-2.2c-2.1-1.1-5-0.6-6.2,1.6C27.9,86.5,28.4,89.4,30.6,90.6L30.6,90.6z" />
-                                                  </g>
-                                                </g>
-                                                <g>
-                                                  <g>
-                                                    <path class="st3 bombillo-line" d="M79.7,35.6c6.1,9,12.3,18.1,18.4,27.1c0.9,1.3,1.7,2.6,2.6,3.8c1.3,2,4,3,6.2,1.6c1.9-1.3,3-4.1,1.6-6.2
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st3 bombillo-line" d="M79.7,35.6c6.1,9,12.3,18.1,18.4,27.1c0.9,1.3,1.7,2.6,2.6,3.8c1.3,2,4,3,6.2,1.6c1.9-1.3,3-4.1,1.6-6.2
                                 c-6.1-9-12.3-18.1-18.4-27.1c-0.9-1.3-1.7-2.6-2.6-3.8c-1.3-2-4-3-6.2-1.6C79.4,30.7,78.3,33.5,79.7,35.6L79.7,35.6z" />
-                                                  </g>
-                                                </g>
-                                                <g>
-                                                  <g>
-                                                    <path class="st3 bombillo-line" d="M160.6,7.3c0,10.9,0,21.9,0,32.8c0,1.5,0,3.1,0,4.6c0,2.4,2.1,4.6,4.5,4.5c2.4-0.1,4.5-2,4.5-4.5
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st3 bombillo-line" d="M160.6,7.3c0,10.9,0,21.9,0,32.8c0,1.5,0,3.1,0,4.6c0,2.4,2.1,4.6,4.5,4.5c2.4-0.1,4.5-2,4.5-4.5
                                 c0-10.9,0-21.9,0-32.8c0-1.5,0-3.1,0-4.6c0-2.4-2.1-4.6-4.5-4.5C162.6,2.9,160.6,4.8,160.6,7.3L160.6,7.3z" />
-                                                  </g>
-                            </g>
-                          </svg>
+                        </g>
+                      </g>
+                    </svg>
                   </div>
                   <div class="home_solucion_title">
                     <span>Iluminación</span>

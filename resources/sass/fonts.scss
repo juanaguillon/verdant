@@ -32,12 +32,14 @@ $icomoon-font-family: "verdant" !default;
 $icomoon-font-path: $fontfolder !default;
 
 $icon-arrow-right: "\e92a";
+$icon-layers: "\e92c";
+$icon-location_city: "\e92b";
 $icon-arrow-left: "\e929";
 $icon-map: "\e928";
 $icon-phone: "\e927";
 $icon-clipboard: "\e924";
 $icon-residential: "\e926";
-$icon-mail: "\e920";
+$icon-mail: "\e920"; 
 $icon-man: "\e921";
 $icon-scan: "\e922";
 $icon-support: "\e923";
@@ -72,7 +74,7 @@ $icon-plug: "\e91f";
 $icon-instagram: "\e911";
 $icon-whatsapp: "\e912";
 $icon-facebook: "\e913";
-$icon-arrow-down: "\e900";
+$icon-arrow-down: "\e900"; 
 $icon-check: "\e901";
 $icon-cross: "\ea0f";
 $icon-bars: "\e914";
@@ -111,216 +113,272 @@ $icon-bars: "\e914";
 
 .icon-map {
   &:before {
-    content: $icon-map;
+    content: $icon-map; 
   }
 }
 .icon-phone {
   &:before {
-    content: $icon-phone;
+    content: $icon-phone; 
   }
 }
 .icon-clipboard {
   &:before {
-    content: $icon-clipboard;
+    content: $icon-clipboard; 
   }
 }
 .icon-residential {
   &:before {
-    content: $icon-residential;
+    content: $icon-residential; 
   }
 }
 .icon-mail {
   &:before {
-    content: $icon-mail;
+    content: $icon-mail; 
   }
 }
 .icon-man {
   &:before {
-    content: $icon-man;
+    content: $icon-man; 
   }
 }
 .icon-scan {
   &:before {
-    content: $icon-scan;
+    content: $icon-scan; 
   }
 }
 .icon-support {
   &:before {
-    content: $icon-support;
+    content: $icon-support; 
   }
 }
 .icon-wardrobe {
   &:before {
-    content: $icon-wardrobe;
+    content: $icon-wardrobe; 
   }
 }
 .icon-attach_file {
   &:before {
-    content: $icon-attach_file;
+    content: $icon-attach_file; 
+  }
+}
+.icon-residential {
+  &:before {
+    content: $icon-residential; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-man {
+  &:before {
+    content: $icon-man; 
+  }
+}
+.icon-scan {
+  &:before {
+    content: $icon-scan; 
+  }
+}
+.icon-support {
+  &:before {
+    content: $icon-support; 
+  }
+}
+.icon-wardrobe {
+  &:before {
+    content: $icon-wardrobe; 
+  }
+}
+.icon-attach_file {
+  &:before {
+    content: $icon-attach_file; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
   }
 }
 .icon-hand-money {
   &:before {
-    content: $icon-hand-money;
+    content: $icon-hand-money; 
   }
 }
 .icon-hand-heart {
   &:before {
-    content: $icon-hand-heart;
+    content: $icon-hand-heart; 
   }
 }
 .icon-clock {
   &:before {
-    content: $icon-clock;
+    content: $icon-clock; 
   }
 }
 .icon-security {
   &:before {
-    content: $icon-security;
+    content: $icon-security; 
   }
 }
 .icon-tree {
   &:before {
-    content: $icon-tree;
+    content: $icon-tree; 
   }
 }
 .icon-person-arrows {
   &:before {
-    content: $icon-person-arrows;
+    content: $icon-person-arrows; 
   }
 }
 .icon-temp {
   &:before {
-    content: $icon-temp;
+    content: $icon-temp; 
   }
 }
 .icon-light {
   &:before {
-    content: $icon-light;
+    content: $icon-light; 
   }
 }
 .icon-window {
   &:before {
-    content: $icon-window;
+    content: $icon-window; 
   }
 }
 .icon-window-music {
   &:before {
-    content: $icon-window-music;
+    content: $icon-window-music; 
   }
 }
 .icon-camera-security {
   &:before {
-    content: $icon-camera-security;
+    content: $icon-camera-security; 
   }
 }
 .icon-search {
   &:before {
-    content: $icon-search;
+    content: $icon-search; 
   }
 }
 .icon-light-brain {
   &:before {
-    content: $icon-light-brain;
+    content: $icon-light-brain; 
   }
 }
 .icon-hand-brain {
   &:before {
-    content: $icon-hand-brain;
+    content: $icon-hand-brain; 
   }
 }
 .icon-heart {
   &:before {
-    content: $icon-heart;
+    content: $icon-heart; 
   }
 }
 .icon-puzzle {
   &:before {
-    content: $icon-puzzle;
+    content: $icon-puzzle; 
   }
 }
 .icon-atom {
   &:before {
-    content: $icon-atom;
+    content: $icon-atom; 
   }
 }
 .icon-hand-person {
   &:before {
-    content: $icon-hand-person;
+    content: $icon-hand-person; 
   }
 }
 .icon-movie {
   &:before {
-    content: $icon-movie;
+    content: $icon-movie; 
   }
 }
 .icon-camera-security-alt {
   &:before {
-    content: $icon-camera-security-alt;
+    content: $icon-camera-security-alt; 
   }
 }
 .icon-temp-alt {
   &:before {
-    content: $icon-temp-alt;
+    content: $icon-temp-alt; 
   }
 }
 .icon-window-parsel {
   &:before {
-    content: $icon-window-parsel;
+    content: $icon-window-parsel; 
   }
 }
 .icon-light-alt {
   &:before {
-    content: $icon-light-alt;
+    content: $icon-light-alt; 
   }
 }
 .icon-team {
   &:before {
-    content: $icon-team;
+    content: $icon-team; 
   }
 }
 .icon-password {
   &:before {
-    content: $icon-password;
+    content: $icon-password; 
   }
 }
 .icon-plug {
   &:before {
-    content: $icon-plug;
+    content: $icon-plug; 
   }
 }
 .icon-instagram {
   &:before {
-    content: $icon-instagram;
+    content: $icon-instagram; 
   }
 }
 .icon-whatsapp {
   &:before {
-    content: $icon-whatsapp;
+    content: $icon-whatsapp; 
   }
 }
 .icon-facebook {
   &:before {
-    content: $icon-facebook;
+    content: $icon-facebook; 
   }
 }
 .icon-arrow-down {
   &:before {
-    content: $icon-arrow-down;
+    content: $icon-arrow-down; 
   }
 }
 .icon-check {
   &:before {
-    content: $icon-check;
+    content: $icon-check; 
   }
 }
 .icon-cross {
   &:before {
-    content: $icon-cross;
+    content: $icon-cross; 
+  }
+}
+.icon-stack {
+  &:before {
+    content: $icon-stack; 
   }
 }
 .icon-bars {
   &:before {
-    content: $icon-bars;
+    content: $icon-bars; 
   }
 }
+

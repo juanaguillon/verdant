@@ -1,3 +1,7 @@
+<?php
+// $mainUrl = "/Verdant/verdant";
+$mainUrl = "https://verdantcomfort.com";
+?>
 <footer class="general_section">
 
   <div class="footer_container container">
@@ -23,16 +27,16 @@
         </div>
         <div class="col-sm-6 col-md-8 col-lg-9">
           <div class="row">
-          <div class="col-md-6">
+            <div class="col-md-6">
               <div class="footer_redes">
                 <div class="footer_redes_text">
                   <span>¡Síguenos en nuestras redes sociales</span>
                 </div>
                 <div class="footer_redes_list">
                   <ul>
-                  <li><a href="https://www.facebook.com/Verdantcomfortmx/" target="_blank"><i class="icon-facebook"></i></a></li>
-                      <li><a href="" class="instagram-verdant" target="_blank"><i class="icon-instagram"></i></a></li>
-                      <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/Verdantcomfortmx/" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="" class="instagram-verdant" target="_blank"><i class="icon-instagram"></i></a></li>
+                    <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -57,7 +61,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
 

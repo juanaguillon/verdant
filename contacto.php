@@ -42,7 +42,7 @@
         <div class="section_title">
           <h3>Contáctanos para recibir información de tu interés</h3>
         </div>
-        <form action="" id="form_proyecto_interesado">
+        <form action="./includes/envioform.php" id="form_proyecto_interesado" method="post">
           <div class="row">
 
             <div class="col-md-6">
@@ -53,7 +53,7 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="text" placeholder="Escriba su nombre o el de su compañía" name="" id="" class="form-control">
+                  <input type="text" placeholder="Escriba su nombre o el de su compañía" name="nombre" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -63,7 +63,17 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="email" placeholder="ejemplo@dominio.com" name="" id="" class="form-control">
+                  <input type="email" placeholder="ejemplo@dominio.com" name="email" id="" class="form-control">
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <i class="icon-residential"></i>
+                  <h4>Ciudad</h4>
+                  <span class="required">*</span>
+                </div>
+                <div class="proyecto_interes_list">
+                  <input type="text" placeholder="" name="ciudad" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -73,7 +83,24 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="tel" placeholder="" name="" id="" class="form-control">
+                  <input type="tel" placeholder="" name="cell" id="" class="form-control">
+                </div>
+              </div>
+              <div class="proyecto_interes_wrapc">
+                <div class="proyecto_interes_title form_label">
+                  <i class="icon-stack"></i>
+                  <h4>Area de interés</h4>
+                  <span class="required">*</span>
+                </div>
+                <div class="proyecto_interes_list">
+                  <select id="inputState" name="area" class="form-control">
+                    <option selected disabled>Area de interés</option>
+                    <option>Iluminación</option>
+                    <option>Cortinas y Toldos</option>
+                    <option>Sistemas de Climatización</option>
+                    <option>Seguridad y Monitoreo</option>
+                    <option>Multimedia</option>
+                  </select>
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -81,13 +108,12 @@
                   <h4>Mensaje</h4>
                 </div>
                 <div class="proyecto_interes_list">
-                  <textarea name="" id="" cols="30" rows="4" class="form-control textarea"></textarea>
+                  <textarea name="mensaje" id="" cols="30" rows="4" class="form-control textarea"></textarea>
                 </div>
               </div>
               <div class="proyecto_interes_wrapc text-center">
                 <button class="g_button">Enviar</button>
               </div>
-
             </div>
             <div class="col-md-6">
 

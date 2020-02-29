@@ -41,7 +41,7 @@
         <div class="section_title">
           <h3>¿Estás interesado en convertir tu inmueble en uno inteligente?</h3>
         </div>
-        <form action="" id="form_proyecto_interesado">
+        <form action="./includes/projectform.php" enctype="multipart/form-data" method="post" id=" form_proyecto_interesado">
           <div class="row">
             <div class="col-md-6">
               <div class="proyecto_interes_wrapc">
@@ -53,35 +53,35 @@
                   <ul class="page_list_checkbox">
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="integrity1">
+                        <input type="checkbox" name="solution[]" id="integrity1" value="Iluminación">
                         <i class="icon-check"></i>
                       </div>
                       <label for="integrity1">Iluminación</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="integrity2">
+                        <input type="checkbox" name="solution[]" id="integrity2" value="Cortinas y Toldos">
                         <i class="icon-check"></i>
                       </div>
                       <label for="integrity2">Cortinas y Toldos</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="integrity3">
+                        <input type="checkbox" name="solution[]" id="integrity3" value="Sistemas de climatización">
                         <i class="icon-check"></i>
                       </div>
                       <label for="integrity3">Sistemas de climatización</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="integrity4">
+                        <input type="checkbox" name="solution[]" id="integrity4" value="Seguridad y monitoreo">
                         <i class="icon-check"></i>
                       </div>
                       <label for="integrity4">Seguridad y monitoreo</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="integrity5">
+                        <input type="checkbox" name="solution[]" id="integrity5" value="Sistema de multimedia">
                         <i class="icon-check"></i>
                       </div>
                       <label for="integrity5">Sistema de multimedia</label>
@@ -95,7 +95,7 @@
                   <h4>¿Cuántos inmuebles desea transformar?</h4>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="number" name="" id="" class="form-control">
+                  <input type="number" name="size" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -107,28 +107,28 @@
                   <ul class="page_list_checkbox">
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="transform1">
-                        <i class="icon-check"></i>
+                        <input type="checkbox" name="type[]" id="transform1" value="Casa">
+                        <i class=" icon-check"></i>
                       </div>
                       <label for="transform1">Casa</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="transform2">
+                        <input type="checkbox" name="type[]" id="transform2" value="Departamento">
                         <i class="icon-check"></i>
                       </div>
                       <label for="transform2">Departamento</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="transform3">
+                        <input type="checkbox" name="type[]" id="transform3" value="Edificio">
                         <i class="icon-check"></i>
                       </div>
                       <label for="transform3">Edificio</label>
                     </li>
                     <li>
                       <div class="page_cbox_wrap">
-                        <input type="checkbox" name="" id="transform3">
+                        <input type="checkbox" name="type[]" id="transform3" value="Oficina">
                         <i class="icon-check"></i>
                       </div>
                       <label for="transform3">Oficina</label>
@@ -144,19 +144,19 @@
                 <div class="proyecto_interes_list">
                   <ul class="page_list_radio">
                     <li>
-                      <input type="radio" name="usoinmueble" id="useidal1">
+                      <input type="radio" name="use" id="useidal1" value="Vivienda">
                       <label for="useidal1">Vivienda</label>
                     </li>
                     <li>
-                      <input type="radio" name="usoinmueble" id="useidal2">
+                      <input type="radio" name="use" id="useidal2" value="Laboral">
                       <label for="useidal2">Laboral</label>
                     </li>
                     <li>
-                      <input type="radio" name="usoinmueble" id="useidal3">
+                      <input type="radio" name="use" id="useidal3" value="Comercial">
                       <label for="useidal3">Comercial</label>
                     </li>
                     <li>
-                      <input type="radio" name="usoinmueble" id="useidal3">
+                      <input type="radio" name="use" id="useidal3" value="Hospitalidad">
                       <label for="useidal3">Hospitalidad</label>
                     </li>
                   </ul>
@@ -171,7 +171,7 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="text" placeholder="Escriba su nombre o el de su compañía" name="" id="" class="form-control">
+                  <input type="text" placeholder="Escriba su nombre o el de su compañía" name="name" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -181,7 +181,7 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="email" placeholder="ejemplo@dominio.com" name="" id="" class="form-control">
+                  <input type="email" placeholder="ejemplo@dominio.com" name="email" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -191,7 +191,7 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="text" placeholder="" name="" id="" class="form-control">
+                  <input type="text" placeholder="" name="postalCode" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -199,7 +199,7 @@
                   <h4>Situación/Problema que se presenta en el inmueble (en caso de que exista)</h4>
                 </div>
                 <div class="proyecto_interes_list">
-                  <textarea name="" id="" cols="30" rows="4" class="form-control textarea"></textarea>
+                  <textarea name="message" id="" cols="30" rows="4" class="form-control textarea"></textarea>
                 </div>
               </div>
 
@@ -210,7 +210,7 @@
                 </div>
                 <div class="proyecto_interes_list">
                   <div class="page_input_file">
-                    <input type="file">
+                    <input type="file" name="adjunt" id="adjunto">
                     <div class="page_input_wrap">
                       <div class="page_input_icon">
                         <i class="icon-attach_file"></i>
