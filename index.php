@@ -1,4 +1,12 @@
-<?php require "./_header.php" ?>
+<?php require "./_header.php";
+$server = "db5000315045.hosting-data.io";
+$user = "dbu565072";
+$password = "Verdant1234%";
+$db = "dbs307615";
+
+$enlace = mysqli_connect($server, $user, $password, $db);
+
+?>
 <style>
   #aro {
     stroke-dasharray: 0;
@@ -64,7 +72,7 @@
                   <div class="form-group">
                     <input type="text" class="form-control" id="inputAddress2" placeholder="Describe brevemente tu solicitud" name="mensaje">
                   </div>
-                  <button class="g_button" type="submit">Solicitar cotización</button>
+                  <button class="g_button" name="enviar" type="submit">Solicitar cotización</button>
                 </form>
 
 
@@ -737,4 +745,6 @@
   </section>
 
 </main>
-<?php require "./_footer.php" ?>
+<?php require "./_footer.php";
+
+ ?>

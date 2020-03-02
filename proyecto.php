@@ -1,4 +1,11 @@
-<?php require "./_header.php" ?>
+<?php require "./_header.php";
+$server = "db5000315045.hosting-data.io";
+$user = "dbu565072";
+$password = "Verdant1234%";
+$db = "dbs307615";
+
+$enlace = mysqli_connect($server, $user, $password, $db);
+?>
 <main id="main_proyecto">
 
   <section id="page_banner" class="general_section">
@@ -41,7 +48,7 @@
         <div class="section_title">
           <h3>¿Estás interesado en convertir tu inmueble en uno inteligente?</h3>
         </div>
-        <form action="./includes/projectform.php" enctype="multipart/form-data" method="post" id=" form_proyecto_interesado">
+        <form action="./includes/projectform.php" enctype="multipart/form-data" method="post" id="form_proyecto_interesado">
           <div class="row">
             <div class="col-md-6">
               <div class="proyecto_interes_wrapc">
@@ -228,7 +235,7 @@
             </div>
             <div class="col-12">
               <div class="proyecto_interes_wrapc text-center">
-                <button class="g_button">Enviar cotización</button>
+                <button class="g_button" type="submit" name="enviar">Enviar cotización</button>
               </div>
             </div>
           </div>
@@ -241,4 +248,55 @@
 
 
 </main>
-<?php require "./_footer.php" ?>
+<?php require "./_footer.php";
+if (isset($_POST['enviar'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $solution = $_POST['solution'];
+  $size = $_POST['size'];
+  $type = $_POST['type'];
+  $use = $_POST['use'];
+  $postalCode = $_POST['postalCode'];
+  $message = $_POST['message'];
+
+
+  $nombreS = mysqli_real_escape_string($enlace, $name);
+  $emailS = mysqli_real_escape_string($enlace, $email);
+  $sizeS = mysqli_real_escape_string($enlace, $size);
+  $postalCodeS = mysqli_real_escape_string($enlace, $postalCode);
+  $msjS = mysqli_real_escape_string($enlace, $message);
+
+  $solutions;
+  $types;
+  foreach ($solution as $s) {
+    if (!$solutions) {
+      $solutions = $s;
+    } else {
+      $solutions = $solutions . ", " . $s;
+    }
+  }
+
+  foreach ($type as $t) {
+    if (!$types) {
+      $types = $t;
+    } else {
+      $types = $types . ", " . $t;
+    }
+  }
+
+  $dir_subida = dirname(__FILE__) . "/includes/storage/";
+  $fichero_subido =  $dir_subida . basename($_FILES['adjunt']['name']);
+
+
+  if (move_uploaded_file($_FILES['adjunt']['tmp_name'], $fichero_subido)) {
+    echo "bien";
+  } else {
+    echo "mal";
+  }
+
+
+  $insert = "INSERT INTO project VALUES('','$nombreS', '$emailS', '$solutions', '$sizeS' ,'$types', '$use', '$postalCodeS', '$msjS', '$fichero_subido' )";
+  $executeInsert = mysqli_query($enlace, $insert);
+}
+
+?>

@@ -4,33 +4,18 @@ $solution = $_POST['solution'];
 $size = $_POST['size'];
 $type = $_POST['type'];
 $use = $_POST['use'];
-$area = $_POST['area'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 $postalCode = $_POST['postalCode'];
 $message = $_POST['message'];
 $adjunt = $_FILES['adjunt'];
-$typeAdjunt = $adjunt["type"];
-
-echo '<pre>';
-print_r($solution);
-print_r($size);
-print_r($type);
-print_r($use);
-print_r($area);
-print_r($name);
-print_r($email);
-print_r($postalCode);
-print_r($message);
-print_r($adjunt);
-echo '</pre>';
 
 
 $imagen_respuesta = "https://verdantcomfort.com/resources/images/verdantLogo.png";
 $imgWidth = 230;
 $imgHeigt = 71;
 
-$url_enviado = "https://verdantcomfort.com/verdant/";
+$url_enviado = "https://verdantcomfort.com/";
 $nombre_sitio = "Verdant";
 
 if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $message)) {
@@ -64,7 +49,7 @@ try {
     $visitante->From = $from;
     $visitante->FromName = $nombre_sitio;
 
-    $mail->AddAttachment($adjunt["tmp_name"], "archivo", base64);
+    $mail->AddAttachment($adjunt["tmp_name"], $adjunt["name"], base64, $adjunt["type"]);
     $mail->AddCC($addCC);
     $visitante->AddAddress($email);
 
@@ -219,14 +204,22 @@ try {
           <td width="500" height="56" valign="top">&nbsp;</td>
         </tr>
         <tr>
+          <td height="134" valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" align="center" valign="top"><img src="<?php echo $imagen_respuesta; ?>" width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
           <td height="268" valign="top">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" valign="top" align="center"><img src="<?php echo $imagen_respuesta;  ?>" width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" />
+                <td>
                   <img src="<?php echo $imgCotiza ?>" width="230"> <br>
-                  Se ha generado una nueva cotización del producto <a href="<?php echo $linkURL ?>"><?php echo $productoName ?></a>, y nos pondremos en contacto con usted lo más pronto posible.
+                  Se ha generado una nueva cotización del proyecto, pronto nos pondremos en contacto con usted lo más pronto posible.
                 </td>
-
               </tr>
             </table>
           </td>
@@ -236,6 +229,12 @@ try {
     </body>
 
     </html>
+
+    <script>
+      function alerta() {
+        document.write('Datos recibidos');
+      }
+    </script>
 
 <?php
     $mensajes = ob_get_contents();
@@ -251,9 +250,10 @@ try {
       $intentos = $intentos + 1;
     }
     if (!$exito) {
-      echo "0";
+      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/';</script>";
     } else {
-      echo "1";
+      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/';</script>";
+
     }
   } else {
     echo "Data no pass";

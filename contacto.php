@@ -1,5 +1,11 @@
-<?php require "./_header.php" ?>
+<?php require "./_header.php";
+$server = "db5000315045.hosting-data.io";
+$user = "dbu565072";
+$password = "Verdant1234%";
+$db = "dbs307615";
 
+$enlace = mysqli_connect($server, $user, $password, $db);
+?>
 
 <main id="main_contacto">
   <section id="page_banner" class="general_section">
@@ -42,7 +48,7 @@
         <div class="section_title">
           <h3>Contáctanos para recibir información de tu interés</h3>
         </div>
-        <form action="./includes/envioform.php" id="form_proyecto_interesado" method="post">
+        <form action="./includes/envioform.php"  id="form_proyecto_interesado" method="post">
           <div class="row">
 
             <div class="col-md-6">
@@ -83,7 +89,7 @@
                   <span class="required">*</span>
                 </div>
                 <div class="proyecto_interes_list">
-                  <input type="tel" placeholder="" name="cell" id="" class="form-control">
+                  <input type="number" placeholder="" name="cell" id="" class="form-control">
                 </div>
               </div>
               <div class="proyecto_interes_wrapc">
@@ -112,7 +118,7 @@
                 </div>
               </div>
               <div class="proyecto_interes_wrapc text-center">
-                <button class="g_button">Enviar</button>
+                <button class="g_button" name="enviar" type="submit">Enviar</button>
               </div>
             </div>
             <div class="col-md-6">
@@ -154,4 +160,20 @@
 
 </main>
 
-<?php require "./_footer.php" ?>
+<?php
+if (isset($_POST['enviar'])) {
+  $nombre = $_POST['nombre'];
+  $email = $_POST['email'];
+  $phone = $_POST['cell'];
+  $city = $_POST['ciudad'];
+  $area = $_POST['area'];
+  $msj = $_POST['mensaje'];
+  $nombreS = mysqli_real_escape_string($enlace, $nombre);
+  $emailS = mysqli_real_escape_string($enlace, $email);
+  $phoneS = mysqli_real_escape_string($enlace, $phone);
+  $cityS = mysqli_real_escape_string($enlace, $city);
+  $areaS = mysqli_real_escape_string($enlace, $area);
+  $msjS = mysqli_real_escape_string($enlace, $msj);
+  $insert = "INSERT INTO contact VALUES('','$nombreS', '$emailS', '$phoneS' ,'$cityS', '$areaS', '$msjS')";
+  $executeInsert = mysqli_query($enlace, $insert);
+}

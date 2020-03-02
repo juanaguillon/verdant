@@ -83,6 +83,8 @@ $mainUrl = "https://verdantcomfort.com";
 
   <script src="./assets/app.js"></script>
 </footer>
+
+  <link  rel="icon" href="imagenes/favicon.ico" type="image/ico" />
 </body>
 
 </html>
