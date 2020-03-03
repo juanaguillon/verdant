@@ -1,5 +1,6 @@
 <?php
 require "./config.php";
+
 $solution = $_POST['solution'];
 $size = $_POST['size'];
 $type = $_POST['type'];
@@ -9,8 +10,6 @@ $email = $_POST['email'];
 $postalCode = $_POST['postalCode'];
 $message = $_POST['message'];
 $adjunt = $_FILES['adjunt'];
-
-
 $imagen_respuesta = "https://verdantcomfort.com/resources/images/verdantLogo.png";
 $imgWidth = 230;
 $imgHeigt = 71;
@@ -61,7 +60,6 @@ try {
 
     $mail->CharSet = 'UTF-8';
     $visitante->CharSet = 'UTF-8';
-
     ob_start();
 ?>
     <html>
@@ -237,6 +235,8 @@ try {
     </script>
 
 <?php
+    
+    
     $mensajes = ob_get_contents();
     ob_clean();
     $mail->Body = $mensaje;
@@ -249,10 +249,54 @@ try {
       $exito = $visitante->Send();
       $intentos = $intentos + 1;
     }
+
+    $server = "db5000315045.hosting-data.io";
+    $user = "dbu565072";
+    $password = "Verdant1234%";
+    $db = "dbs307615";
+
+    $enlace = mysqli_connect($server, $user, $password, $db);
+
+
+    $nombreS = mysqli_real_escape_string($enlace, $name);
+    $emailS = mysqli_real_escape_string($enlace, $email);
+    $sizeS = mysqli_real_escape_string($enlace, $size);
+    $postalCodeS = mysqli_real_escape_string($enlace, $postalCode);
+    $msjS = mysqli_real_escape_string($enlace, $message);
+
+    $solutions;
+    $types;
+    foreach ($solution as $s) {
+      if (!$solutions) {
+        $solutions = $s;
+      } else {
+        $solutions = $solutions . ", " . $s;
+      }
+    }
+
+    foreach ($type as $t) {
+      if (!$types) {
+        $types = $t;
+      } else {
+        $types = $types . ", " . $t;
+      }
+    }
+
+    $adjuntRute = time() . basename($_FILES['adjunt']['name']);
+    $dir_subida = dirname(__FILE__) . "/storage/";
+    $fichero_subido =  $dir_subida . $adjuntRute;
+    // move_uploaded_file($_FILES['adjunt']['tmp_name'], $fichero_subido);
+    if (!move_uploaded_file($_FILES['adjunt']['tmp_name'], $fichero_subido)) {
+      $fichero_subido = "error";
+    }
+
+    $insert = "INSERT INTO project VALUES('','$nombreS', '$emailS', '$solutions', '$sizeS' ,'$types', '$use', '$postalCodeS', '$msjS', '$adjuntRute' )";
+    $executeInsert = mysqli_query($enlace, $insert);
+    
     if (!$exito) {
-      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/';</script>";
+      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/proyecto.php';</script>";
     } else {
-      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/';</script>";
+      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/proyecto.php';</script>";
 
     }
   } else {
