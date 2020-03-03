@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
 $fontfolder: "#{$resourcePath}/fonts/";
 
-@font-face {
+@font-face {  
   font-family: "Futura PT";
   src: url("#{$fontfolder}FuturaPT-Medium.woff2") format("woff2"),
     url("#{$fontfolder}FuturaPT-Medium.woff") format("woff"),
@@ -31,7 +31,20 @@ $fontfolder: "#{$resourcePath}/fonts/";
 $icomoon-font-family: "verdant" !default;
 $icomoon-font-path: $fontfolder !default;
 
-$icon-stack: "\e92b";
+$icon-blueprint-house: "\e92b";
+$icon-company: "\e92c";
+$icon-map: "\e928";
+$icon-phone: "\e927";
+$icon-clipboard: "\e924";
+$icon-residential: "\e926";
+$icon-mail: "\e920";
+$icon-man: "\e921";
+$icon-scan: "\e922";
+$icon-support: "\e923";
+$icon-wardrobe: "\e925";
+$icon-attach_file: "\e919";
+$icon-arrow-right: "\e92a";
+$icon-arrow-left: "\e929";
 $icon-hand-money: "\e902";
 $icon-hand-heart: "\e903";
 $icon-clock: "\e904";
@@ -64,20 +77,7 @@ $icon-facebook: "\e913";
 $icon-arrow-down: "\e900";
 $icon-check: "\e901";
 $icon-cross: "\ea0f";
-$icon-map: "\e928";
-$icon-phone: "\e927";
-$icon-clipboard: "\e924";
-$icon-residential: "\e926";
-$icon-mail: "\e920";
-$icon-man: "\e921";
-$icon-scan: "\e922";
-$icon-support: "\e923";
-$icon-wardrobe: "\e925";
-$icon-attach_file: "\e919";
-$icon-arrow-left: "\e929";  
-$icon-arrow-right: "\e92a";
-$icon-arrow-left: "\e929";   
-$icon-bars: "\e914";
+$icon-bars: "\e914"; 
 
 @font-face {
   font-family: "#{$icomoon-font-family}";
@@ -110,10 +110,75 @@ $icon-bars: "\e914";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-stack { 
+  
+.icon-blueprint-house {
   &:before {
-    content: $icon-stack; 
+    content: $icon-blueprint-house; 
+  }
+}
+.icon-company {
+  &:before {
+    content: $icon-company; 
+  }
+}
+.icon-map {
+  &:before {
+    content: $icon-map; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-clipboard {
+  &:before {
+    content: $icon-clipboard; 
+  }
+}
+.icon-residential {
+  &:before {
+    content: $icon-residential; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-man {
+  &:before {
+    content: $icon-man; 
+  }
+}
+.icon-scan {
+  &:before {
+    content: $icon-scan; 
+  }
+}
+.icon-support {
+  &:before {
+    content: $icon-support; 
+  }
+}
+.icon-wardrobe {
+  &:before {
+    content: $icon-wardrobe; 
+  }
+}
+.icon-attach_file {
+  &:before {
+    content: $icon-attach_file; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
   }
 }
 .icon-hand-money {
@@ -274,71 +339,6 @@ $icon-bars: "\e914";
 .icon-cross {
   &:before {
     content: $icon-cross; 
-  }
-}
-.icon-map {
-  &:before {
-    content: $icon-map; 
-  }
-}
-.icon-phone {
-  &:before {
-    content: $icon-phone; 
-  }
-}
-.icon-clipboard {
-  &:before {
-    content: $icon-clipboard; 
-  }
-}
-.icon-residential {
-  &:before {
-    content: $icon-residential; 
-  }
-}
-.icon-mail {
-  &:before {
-    content: $icon-mail; 
-  }
-}
-.icon-man {
-  &:before {
-    content: $icon-man; 
-  }
-}
-.icon-scan {
-  &:before {
-    content: $icon-scan; 
-  }
-}
-.icon-support {
-  &:before {
-    content: $icon-support; 
-  }
-}
-.icon-wardrobe {
-  &:before {
-    content: $icon-wardrobe; 
-  }
-}
-.icon-attach_file {
-  &:before {
-    content: $icon-attach_file; 
-  }
-}
-.icon-arrow-left {
-  &:before {
-    content: $icon-arrow-left; 
-  }
-}
-.icon-arrow-right {
-  &:before {
-    content: $icon-arrow-right; 
-  }
-}
-.icon-arrow-left {
-  &:before {
-    content: $icon-arrow-left; 
   }
 }
 .icon-bars {

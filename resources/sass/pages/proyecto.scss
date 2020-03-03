@@ -30,8 +30,11 @@
   align-items: center;
   i {
     color: $colorblue;
-    font-size: 49px;
+    font-size: 32px;
+    width: 50px;
     line-height: 1;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;  
   }
 }

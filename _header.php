@@ -10,7 +10,9 @@ $mainUrl = "https://verdantcomfort.com";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Verdant</title>
+  <link rel="icon" href="./resources/images/favicon.ico"> 
   <link rel="stylesheet" href="./assets/css/style.css">
+  
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];

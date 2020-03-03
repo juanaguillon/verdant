@@ -7,6 +7,7 @@ $db = "dbs307615";
 $enlace = mysqli_connect($server, $user, $password, $db);
 
 ?>
+
 <style>
   #aro {
     stroke-dasharray: 0;
@@ -34,7 +35,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                 <!-- <h3>Tecnología para tu Vida</h3> -->
                 <h3>Es hora de renovar tu hogar</h3>
               </div>
-              <div class="formulario-home">
+              <div class="formulario-home"> 
 
                 <form action="./includes/envioform.php" method="post">
 
