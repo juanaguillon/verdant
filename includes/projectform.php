@@ -113,7 +113,7 @@ try {
                     </tr>
 
                     <tr>
-                      <td><span><strong>Solucion </strong></span></td>
+                      <td><span><strong>Solución </strong></span></td>
                       <td>
                         <ul>
                           <?php
@@ -134,7 +134,7 @@ try {
                     </tr>
 
                     <tr>
-                      <td><span><strong>Tipp de inmueble</strong></span></td>
+                      <td><span><strong>Tipo de inmueble</strong></span></td>
                       <td>
                         <ul>
                           <?php
@@ -292,11 +292,11 @@ try {
 
     $insert = "INSERT INTO project VALUES('','$nombreS', '$emailS', '$solutions', '$sizeS' ,'$types', '$use', '$postalCodeS', '$msjS', '$adjuntRute' )";
     $executeInsert = mysqli_query($enlace, $insert);
-    
+
     if (!$exito) {
-      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/proyecto.php';</script>";
+      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/proyecto';</script>";
     } else {
-      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/proyecto.php';</script>";
+      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/proyecto';</script>";
 
     }
   } else {

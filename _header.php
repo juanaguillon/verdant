@@ -55,19 +55,19 @@ $mainUrl = "https://verdantcomfort.com";
                 <a href="<?= $mainUrl ?>">INICIO</a>
               </li>
               <li>
-                <a href="<?= $mainUrl ?>/somos.php">NOSOTROS</a>
+                <a href="<?= $mainUrl ?>/somos">NOSOTROS</a>
               </li>
               <li>
-                <a href="<?= $mainUrl ?>/proyecto.php">PROYECTO</a>
+                <a href="<?= $mainUrl ?>/proyecto">PROYECTO</a>
               </li>
               <li>
-                <a href="<?= $mainUrl ?>/soluciones.php">SOLUCIONES</a>
+                <a href="<?= $mainUrl ?>/soluciones">SOLUCIONES</a>
               </li>
               <li>
-                <a href="<?= $mainUrl ?>/tecnologia.php">TECNOLOGÍA</a>
+                <a href="<?= $mainUrl ?>/tecnologia">TECNOLOGÍA</a>
               </li>
               <li>
-                <a href="<?= $mainUrl ?>/contacto.php">CONTACTO</a>
+                <a href="<?= $mainUrl ?>/contacto">CONTACTO</a>
               </li>
               <li>
                 <a class="contacto-whastapp" target="_blank" href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios."><i class="icon-whatsapp"></i></a>

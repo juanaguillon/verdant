@@ -190,7 +190,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                 de redes interiores y exteriores de comunicación.</p>
             </div>
             <div class="home_domotica_action">
-              <a href="somos.php" class="g_button">¿Quienes somos?</a>
+              <a href="somos" class="g_button">¿Quienes somos?</a>
             </div>
           </div>
         </div>
@@ -697,7 +697,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
               </p>
             </div>
             <div class="home_tecno_button">
-              <a href="tecnologia.php" class="g_button">Descubre más</a>
+              <a href="tecnologia" class="g_button">Descubre más</a>
             </div>
           </div>
         </div>
@@ -729,7 +729,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
               </p>
             </div>
             <div class="home_eligen_action">
-              <a href="proyecto.php" class="g_button">Solicitar cotización</a>
+              <a href="proyecto" class="g_button">Solicitar cotización</a>
             </div>
           </div>
         </div>

@@ -12,14 +12,14 @@ $mainUrl = "https://verdantcomfort.com";
             <div class="col-sm-6 footer_col footer_col_left">
               <ul>
                 <li><a href="<?= $mainUrl ?>">Inicio</a></li>
-                <li><a href="<?= $mainUrl ?>/somos.php">Nosotros</a></li>
-                <li><a href="<?= $mainUrl ?>/proyecto.php">Proyecto</a></li>
+                <li><a href="<?= $mainUrl ?>/somos">Nosotros</a></li>
+                <li><a href="<?= $mainUrl ?>/proyecto">Proyecto</a></li>
               </ul>
             </div>
             <div class="col-sm-6 footer_col footer_col_right">
               <ul>
-                <li><a href="<?= $mainUrl ?>/soluciones.php">Soluciones</a></li>
-                <li><a href="<?= $mainUrl ?>/tecnologia.php">Tecnología</a></li>
+                <li><a href="<?= $mainUrl ?>/soluciones">Soluciones</a></li>
+                <li><a href="<?= $mainUrl ?>/tecnologia">Tecnología</a></li>
                 <li><a href="">Contacto</a></li>
               </ul>
             </div>
