@@ -14,13 +14,14 @@ $mainUrl = "https://verdantcomfort.com";
                 <li><a href="<?= $mainUrl ?>">Inicio</a></li>
                 <li><a href="<?= $mainUrl ?>/somos">Nosotros</a></li>
                 <li><a href="<?= $mainUrl ?>/proyecto">Proyecto</a></li>
+                <li><a href="<?= $mainUrl ?>/politicas">Políticas</a></li>
               </ul>
             </div>
             <div class="col-sm-6 footer_col footer_col_right">
               <ul>
                 <li><a href="<?= $mainUrl ?>/soluciones">Soluciones</a></li>
                 <li><a href="<?= $mainUrl ?>/tecnologia">Tecnología</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="<?= $mainUrl ?>/contacto">Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -84,7 +85,7 @@ $mainUrl = "https://verdantcomfort.com";
   <script src="./assets/app.js"></script>
 </footer>
 
-  <link  rel="icon" href="imagenes/favicon.ico" type="image/ico" />
+<link  rel="icon" href="imagenes/favicon.ico" type="image/ico" />
 </body>
 
 </html>

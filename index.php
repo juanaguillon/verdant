@@ -37,7 +37,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
               </div>
               <div class="formulario-home"> 
 
-                <form action="./includes/envioform.php" method="post">
+                <form action="./includes/bannerform.php" method="post">
 
                   <div class="form-group">
 

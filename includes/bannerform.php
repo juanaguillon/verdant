@@ -1,12 +1,26 @@
 <?php
-
 $server = "db5000315045.hosting-data.io";
 $user = "dbu565072";
 $password = "Verdant1234%";
 $db = "dbs307615";
 
 $enlace = mysqli_connect($server, $user, $password, $db);
-
+if (isset($_POST['enviar'])) {
+  $nombre = $_POST['nombre'];
+  $email = $_POST['email'];
+  $phone = $_POST['cell'];
+  $city = $_POST['ciudad'];
+  $area = $_POST['area'];
+  $msj = $_POST['mensaje'];
+  $nombreS = mysqli_real_escape_string($enlace, $nombre);
+  $emailS = mysqli_real_escape_string($enlace, $email);
+  $phoneS = mysqli_real_escape_string($enlace, $phone);
+  $cityS = mysqli_real_escape_string($enlace, $city);
+  $areaS = mysqli_real_escape_string($enlace, $area);
+  $msjS = mysqli_real_escape_string($enlace, $msj);
+  $insert = "INSERT INTO Banner VALUES('','$nombreS', '$emailS', '$phoneS' ,'$cityS', '$areaS', '$msjS')";
+  $executeInsert = mysqli_query($enlace, $insert);
+}
 
 require "./config.php";
 $nombre = $_POST['nombre'];
@@ -28,28 +42,8 @@ if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]
   return 0;
 }
 
-$nombreL= strlen($nombre);
-$cityL = strlen($city);
-
 try {
-  if ($nombreL<=50 && $nombre !="" && $email != "" && $phone != "" && $area != "" && $city != "" && $cityL <= 30) {
-    if (isset($_POST['enviar'])) {
-      $nombre = $_POST['nombre'];
-      $email = $_POST['email'];
-      $phone = $_POST['cell'];
-      $city = $_POST['ciudad'];
-      $area = $_POST['area'];
-      $msj = $_POST['mensaje'];
-      $nombreS = mysqli_real_escape_string($enlace, $nombre);
-      $emailS = mysqli_real_escape_string($enlace, $email);
-      $phoneS = mysqli_real_escape_string($enlace, $phone);
-      $cityS = mysqli_real_escape_string($enlace, $city);
-      $areaS = mysqli_real_escape_string($enlace, $area);
-      $msjS = mysqli_real_escape_string($enlace, $msj);
-      $insert = "INSERT INTO contact VALUES('','$nombreS', '$emailS', '$phoneS' ,'$cityS', '$areaS', '$msjS')";
-      $executeInsert = mysqli_query($enlace, $insert);
-    }
-
+  if ($nombre != "" && $email != "" && $phone != "" && $area != "" && $city != "") {
     require "./_includes/class.phpmailer.php";
     $mail = new phpmailer();
     $visitante =  new phpmailer();
@@ -83,7 +77,7 @@ try {
     $visitante->IsHTML(true);
     $mail->Port = "465";
 
-    $mail->Subject = "Formulario enviado desde el website " . $nombre_sitio;
+    $mail->Subject = "Formulario enviado desde el banner " . $nombre_sitio;
     $visitante->Subject =  "Gracias por escribirnos";
 
     if (!$msj) {
