@@ -1,4 +1,4 @@
-<?php require "./_header.php";?>
+<?php require "./_header.php"; ?>
 <main id="main_contacto">
   <section id="page_banner" class="general_section">
     <div class="page_banner_wrap container-fluid">
@@ -15,7 +15,7 @@
             </div>
 
             <div class="page_banner_img imagefill_">
-              <img src="resources\images\contacto-banner-verdant.jpg" alt="">
+              <img src="resources\images\politicas-banner-verdant.jpg" alt="">
             </div>
 
           </div>
