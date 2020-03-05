@@ -69,9 +69,9 @@ $mainUrl = "https://verdantcomfort.com";
               <li>
                 <a href="<?= $mainUrl ?>/contacto">CONTACTO</a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="contacto-whastapp" target="_blank" href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios."><i class="icon-whatsapp"></i></a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

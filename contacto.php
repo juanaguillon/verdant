@@ -130,7 +130,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                   <h3>Información de contacto</h3>
                   <div class="contacto_data_field">
                     <span class="contacto_field">Email:</span>
-                    <span class="contacto_value">someemail@domain.com</span>
+                    <span class="contacto_value">info@verdantcomfort.com</span>
                   </div>
                   <div class="contacto_data_field">
                     <span class="contacto_field">Teléfono:</span>
@@ -145,7 +145,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                     <ul class="contacto_redes">
                       <li><a href="https://www.facebook.com/Verdantcomfortmx/" target="_blank"><i class="icon-facebook"></i></a></li>
                       <li><a href="" class="instagram-verdant" target="_blank"><i class="icon-instagram"></i></a></li>
-                      <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li>
+                      <!-- <li><a href="https://wa.me/5215548991475?text=Hola,%20estoy%20interesad@%20en%20sus%20servicios." target="_blank"><i class="icon-whatsapp"></i></a></li> -->
                     </ul>
                   </div>
                   <div class="contacto_data_field">
