@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+$s = $_SESSION['username'];
+if(!isset($s)){
+  echo "<script>window.location.href='https://verdantcomfort.com/login';</script>";
+}
+
 $server = "db5000315045.hosting-data.io";
 $user = "dbu565072";
 $password = "Verdant1234%";
@@ -110,68 +117,51 @@ if ($_GET["ref"] === "download_banner") {
   echo mb_convert_encoding(ob_get_clean(), 'UTF-16LE', 'UTF-8');
   exit;
 };
-require "./_header.php";
+
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<script>
-  function password(a) {
-    var pass = prompt("Introduzca la contraseña", "password");
-    if (pass != "Verdant1234%") {
-      password();
-    }
-  }
-
-  function username() {
-    var name = prompt("Introduzca el username", "nombre");
-    if (name == "Verdant Comfort Admin") {
-      password();
-    } else {
-      username();
-    }
-  }
-
-  var name = prompt("Introduzca el username", "nombre");
-  if (name != null) {
-    if (name == "Verdant Comfort Admin") {
-      password();
-    } else {
-      username();
-    }
-  }
-</script>
-
-<?php require "./_header.php"; ?>
 <html>
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verdant</title>
+    <link rel="icon" href="./resources/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <div style="margin-top:100px">
+  <div style="margin-top:100px" class="contenedor-registros-all">
+
+
 
     <div class="card">
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Información Contactos
+            Solicitudes de Contacto
           </button>
         </h2>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="table-responsive" style="padding:5px">
+        <div class="table-responsive">
           <table class="table table-bordered">
-            <tr>
-              <td>Id</td>
-              <td>Nombre</td>
-              <td>Correo</td>
-              <td>Teléfono</td>
-              <td>Ciudad</td>
-              <td>área</td>
-              <td>Mensaje</td>
-            </tr>
+            <thead>
+              <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Correo</td>
+                <td>Teléfono</td>
+                <td>Ciudad</td>
+                <td>área</td>
+                <td class="mensaje-column">Mensaje</td>
+              </tr>
+            </thead>
             <?php
             foreach ($resultsC as $key => $value) {
             ?>
@@ -190,7 +180,7 @@ require "./_header.php";
             ?>
           </table>
         </div>
-        <a href="?ref=download_contact" type="button" class="btn btn-primary">Descargar Contactos</a>
+        <a href="?ref=download_contact" type="button" class="g_button">Descargar solicitudes</a>
       </div>
     </div>
 
@@ -198,22 +188,24 @@ require "./_header.php";
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBanner" aria-expanded="false" aria-controls="collapseBanner">
-            Información Banner
+            Solicitudes de Cotización - Home
           </button>
         </h2>
       </div>
       <div id="collapseBanner" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="table-responsive" style="padding:5px">
+        <div class="table-responsive">
           <table class="table table-bordered">
-            <tr>
-              <td>Id</td>
-              <td>Nombre</td>
-              <td>Correo</td>
-              <td>Teléfono</td>
-              <td>Ciudad</td>
-              <td>área</td>
-              <td>Mensaje</td>
-            </tr>
+            <thead>
+              <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Correo</td>
+                <td>Teléfono</td>
+                <td>Ciudad</td>
+                <td>área</td>
+                <td>Mensaje</td>
+              </tr>
+            </thead>
             <?php
             foreach ($resultsB as $key => $value) {
             ?>
@@ -232,7 +224,7 @@ require "./_header.php";
             ?>
           </table>
         </div>
-        <a href="?ref=download_banner" type="button" class="btn btn-primary">Descargar Datos Banner</a>
+        <a href="?ref=download_banner" type="button" class="g_button">Descargar solicitudes</a>
       </div>
     </div>
 
@@ -241,12 +233,12 @@ require "./_header.php";
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
-              Información Proyectos
+              Solicitudes de Cotización - Proyecto
           </h2>
         </div>
 
         <div id="collapseProject" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="table-responsive" style="padding:5px">
+          <div class="table-responsive">
             <table class="table table-bordered">
               <thead class="thead-dark">
                 <tr>
@@ -283,7 +275,7 @@ require "./_header.php";
               ?>
             </table>
           </div>
-          <a href="?ref=download_project" type="button" class="btn btn-primary">Descargar Proyectos</a>
+          <a href="?ref=download_project" type="button" class="g_button">Descargar solicitudes</a>
 
         </div>
       </div>
@@ -291,8 +283,8 @@ require "./_header.php";
     </div>
 
     <br>
-    <a href="proyecto">
-      Logout
+    <a href="./includes/log/out.php" class="g_button">
+      Cerrar Sesión
     </a>
   </div>
 
@@ -302,4 +294,3 @@ require "./_header.php";
 </body>
 
 </html>
-<?php require "./_footer.php"; ?>

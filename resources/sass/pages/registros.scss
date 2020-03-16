@@ -1,0 +1,72 @@
+.contenedor-registros-all{
+  width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;   
+    padding: 30px 0;
+
+    .card{
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0px 0px 6px rgba(43, 43, 43, 0.2);
+      .card-header{
+        padding: 0 !important;
+        background: none;
+        border:none;
+        h2{
+          display: flex;
+        }
+        button{
+          font-weight: 500;
+          color: #8c8c8c;
+          font-family: "Futura PT";
+          font-size: 25px;
+          padding: 0 !important;
+        }
+      }
+      table{
+        margin-bottom: 0 !important; 
+        
+        thead{
+          background: #efefef;
+          td{
+            min-width: 100px;
+          }
+        }
+        tbody{
+          td{
+            line-height: 20px;
+          }
+        }
+      }
+      .table-header{
+        padding: 20px 0;
+      }
+      .table-responsive{
+        padding: 20px 0;
+      }
+    }
+    
+}
+.mensaje-column{
+  min-width: 200px;
+}
+
+.contenedor-registros-tabla{
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(43, 43, 43, 0.34);
+  margin-bottom: 30px;
+
+ h3{
+  font-weight: 500;
+  color: #8c8c8c;
+  font-family: "Futura PT";
+  font-size: 25px;
+ }
+
+  table{
+    thead{
+      background: #efefef;
+    }
+  }
+}

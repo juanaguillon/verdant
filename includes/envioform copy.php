@@ -1,20 +1,30 @@
 <?php
 require "./config.php";
-
 $solution = $_POST['solution'];
 $size = $_POST['size'];
 $type = $_POST['type'];
 $use = $_POST['use'];
+$area = $_POST['area'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 $postalCode = $_POST['postalCode'];
 $message = $_POST['message'];
-$adjunt = $_FILES['adjunt'];
+
+console.log("$solution")
+console.log("$size")
+console.log("$type")
+console.log("$use")
+console.log("$area")
+console.log("$email")
+console.log("$email")
+console.log("$postalCode")
+console.log("$message")
+
 $imagen_respuesta = "https://verdantcomfort.com/resources/images/verdantLogo.png";
 $imgWidth = 230;
 $imgHeigt = 71;
 
-$url_enviado = "https://verdantcomfort.com/";
+$url_enviado = "https://verdantcomfort.com/verdant/";
 $nombre_sitio = "Verdant";
 
 if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $message)) {
@@ -22,7 +32,7 @@ if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]
 }
 
 try {
-  if ($solution != "") {
+  if ($nombre != "" && $email != "" && $phone != "" && $area != "" && $city != "") {
     require "./_includes/class.phpmailer.php";
     $mail = new phpmailer();
     $visitante =  new phpmailer();
@@ -48,10 +58,7 @@ try {
     $visitante->From = $from;
     $visitante->FromName = $nombre_sitio;
 
-    $mail->AddAttachment($adjunt["tmp_name"], $adjunt["name"], "base64", $adjunt["type"]);
     $mail->AddCC($addCC);
-    $mail->AddCC($addCC1);
-    $mail->AddCC($addCC2);
     $visitante->AddAddress($email);
 
     $mail->IsHTML(true);
@@ -60,8 +67,13 @@ try {
     $mail->Subject = "Formulario enviado desde el website " . $nombre_sitio;
     $visitante->Subject =  "Gracias por escribirnos";
 
+    if (!$msj) {
+      $msj ="Enviado desde el inicio";
+    }
+
     $mail->CharSet = 'UTF-8';
     $visitante->CharSet = 'UTF-8';
+
     ob_start();
 ?>
     <html>
@@ -92,7 +104,7 @@ try {
               <tr>
                 <td width="500" height="134" valign="top" style="font-Tamaño: 12px; font-family: Arial, Helvetica, sans-serif; ">
                   <p align="center">
-                    Formulario enviado desde el website <a href="<?php echo $url_enviado; ?>"><?php echo $nombre_sitio; ?></a>
+                      Formulario enviado desde el website <a href="<?php echo $url_enviado; ?>"><?php echo $nombre_sitio; ?></a>
                   </p>
                   <table width="384" border="1" align="center" cellpadding="3" cellspacing="0" bordercolor="#000" style="font-Tamaño: 12px; font-family: Arial, Helvetica, sans-serif;">
 
@@ -100,7 +112,7 @@ try {
                       <td width="84"><span><strong>Nombre</strong></span></td>
                       <td width="251">
                         <span>
-                          <?php echo $name; ?>
+                          <?php echo $nombre; ?>
                         </span>
                       </td>
                     </tr>
@@ -115,52 +127,28 @@ try {
                     </tr>
 
                     <tr>
-                      <td><span><strong>Solución </strong></span></td>
-                      <td>
-                        <ul>
-                          <?php
-                          foreach ($solution as $s) : ?>
-                            <li><?= $s ?></li>
-                          <?php endforeach; ?>
-                        </ul>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td><span><strong>Cantidad</strong></span></td>
+                      <td><span><strong>Ciudad</strong></span></td>
                       <td>
                         <span>
-                          <?php echo $size; ?>
+                          <?php echo $city; ?>
                         </span>
                       </td>
                     </tr>
 
                     <tr>
-                      <td><span><strong>Tipo de inmueble</strong></span></td>
-                      <td>
-                        <ul>
-                          <?php
-                          foreach ($type as $s) : ?>
-                            <li><?= $s ?></li>
-                          <?php endforeach; ?>
-                        </ul>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td><span><strong>Uso</strong></span></td>
+                      <td><span><strong>Teléfono</strong></span></td>
                       <td>
                         <span>
-                          <?php echo $use; ?>
+                          <?php echo $phone; ?>
                         </span>
                       </td>
                     </tr>
 
                     <tr>
-                      <td><span><strong>Codigo Postal</strong></span></td>
+                      <td><span><strong>Area de interés</strong></span></td>
                       <td>
                         <span>
-                          <?php echo $postalCode; ?>
+                          <?php echo $area; ?>
                         </span>
                       </td>
                     </tr>
@@ -169,7 +157,7 @@ try {
                       <td><span><strong>Mensaje</strong></span></td>
                       <td>
                         <span>
-                          <?php echo $message; ?>
+                          <?php echo $msj; ?>
                         </span>
                       </td>
                     </tr>
@@ -204,22 +192,14 @@ try {
           <td width="500" height="56" valign="top">&nbsp;</td>
         </tr>
         <tr>
-          <td height="134" valign="top">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0">
-              <tr>
-                <td width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" align="center" valign="top"><img src="<?php echo $imagen_respuesta; ?>" width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" /></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
           <td height="268" valign="top">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td>
+                <td width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" valign="top" align="center"><img src="<?php echo $imagen_respuesta;  ?>" width="<?php echo $imgWidth ?>" height="<?php echo $imgHeigt ?>" />
                   <img src="<?php echo $imgCotiza ?>" width="230"> <br>
-                  Se ha generado una nueva cotización del proyecto, pronto nos pondremos en contacto con usted lo más pronto posible.
+                  Se ha generado una nueva cotización del producto <a href="<?php echo $linkURL ?>"><?php echo $productoName ?></a>, y nos pondremos en contacto con usted lo más pronto posible.
                 </td>
+
               </tr>
             </table>
           </td>
@@ -230,15 +210,7 @@ try {
 
     </html>
 
-    <script>
-      function alerta() {
-        document.write('Datos recibidos');
-      }
-    </script>
-
 <?php
-    
-    
     $mensajes = ob_get_contents();
     ob_clean();
     $mail->Body = $mensaje;
@@ -251,55 +223,10 @@ try {
       $exito = $visitante->Send();
       $intentos = $intentos + 1;
     }
-
-    $server = "db5000315045.hosting-data.io";
-    $user = "dbu565072";
-    $password = "Verdant1234%";
-    $db = "dbs307615";
-
-    $enlace = mysqli_connect($server, $user, $password, $db);
-
-
-    $nombreS = mysqli_real_escape_string($enlace, $name);
-    $emailS = mysqli_real_escape_string($enlace, $email);
-    $sizeS = mysqli_real_escape_string($enlace, $size);
-    $postalCodeS = mysqli_real_escape_string($enlace, $postalCode);
-    $msjS = mysqli_real_escape_string($enlace, $message);
-
-    $solutions;
-    $types;
-    foreach ($solution as $s) {
-      if (!$solutions) {
-        $solutions = $s;
-      } else {
-        $solutions = $solutions . ", " . $s;
-      }
-    }
-
-    foreach ($type as $t) {
-      if (!$types) {
-        $types = $t;
-      } else {
-        $types = $types . ", " . $t;
-      }
-    }
-
-    $adjuntRute = time() . basename($_FILES['adjunt']['name']);
-    $dir_subida = dirname(__FILE__) . "/storage/";
-    $fichero_subido =  $dir_subida . $adjuntRute;
-    // move_uploaded_file($_FILES['adjunt']['tmp_name'], $fichero_subido);
-    if (!move_uploaded_file($_FILES['adjunt']['tmp_name'], $fichero_subido)) {
-      $fichero_subido = "error";
-    }
-
-    $insert = "INSERT INTO project VALUES('','$nombreS', '$emailS', '$solutions', '$sizeS' ,'$types', '$use', '$postalCodeS', '$msjS', '$adjuntRute' )";
-    $executeInsert = mysqli_query($enlace, $insert);
-
     if (!$exito) {
-      echo "<script>alert('No se han podido registrar los datos');window.location.href='https://verdantcomfort.com/proyecto';</script>";
+      echo "0";
     } else {
-      echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/proyecto';</script>";
-
+      echo "1";
     }
   } else {
     echo "Data no pass";

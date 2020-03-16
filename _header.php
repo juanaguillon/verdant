@@ -10,9 +10,9 @@ $mainUrl = "https://verdantcomfort.com";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Verdant</title>
-  <link rel="icon" href="./resources/images/favicon.ico"> 
+  <link rel="icon" href="./resources/images/favicon.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -29,6 +29,39 @@ $mainUrl = "https://verdantcomfort.com";
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-5LN7749');
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 659864240 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-659864240"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-659864240');
+  </script>
+
+  <!-- Event snippet for Website traffic conversion page -->
+  <script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-659864240/BUltCPHtm8oBELD10roC'
+    });
+  </script>
+
+
+  <!-- Global site tag (gtag.js) - Google Ads: 659864240 -->
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=AW-659864240"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-659864240');
+    </script>-->
+
+
 
 </head>
 

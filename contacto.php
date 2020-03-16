@@ -60,7 +60,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                     <span class="required">*</span>
                   </div>
                   <div class="proyecto_interes_list">
-                    <input type="text" placeholder="Escriba su nombre o el de su compañía" name="nombre" id="" class="form-control">
+                    <input type="text" placeholder="Escriba su nombre o el de su compañía" name="nombre" id="" class="form-control" onkeypress="return check(event)">
                   </div>
                 </div>
                 <div class="proyecto_interes_wrapc col-12 col-sm-6 col-md-6">
@@ -115,11 +115,11 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                     <h4>Mensaje</h4>
                   </div>
                   <div class="proyecto_interes_list">
-                    <textarea name="mensaje" id="" cols="30" rows="4" class="form-control textarea"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="4" class="form-control textarea" onkeypress="return check(event)"></textarea>
                   </div>
                 </div>
-                <div class="proyecto_interes_wrapc col-md-12 ">
-                  <button class="g_button" name="enviar" type="submit" onclick="validar()">Enviar</button>
+                <div class=" proyecto_interes_wrapc col-md-12 ">
+                  <button class=" g_button" name="enviar" type="submit" onclick="validar()">Enviar</button>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ $enlace = mysqli_connect($server, $user, $password, $db);
                   </div>
                   <div class="contacto_data_field">
                     <span class="contacto_field">Teléfono:</span>
-                    <span class="contacto_value">(+57) 441 31 78</span>
+                    <span class="contacto_value">+52 55 5611 8391</span>
                   </div>
                   <div class="contacto_data_field">
                     <span class="contacto_field">Dirección:</span>
@@ -165,7 +165,17 @@ $enlace = mysqli_connect($server, $user, $password, $db);
 
 
 </main>
+<script>
+  function check(e) {
+    t = (document.all) ? e.keyCode : e.which;
 
+    if (t == 33 || t == 35 || t == 36 || t == 37 || t == 38 || t == 47 || t == 33 || t == 64) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+</script>
 <?php require "./_footer.php" ?>
 <?php
 if (isset($_POST['enviar'])) {

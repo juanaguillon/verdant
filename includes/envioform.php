@@ -15,6 +15,7 @@ $phone = $_POST['cell'];
 $city = $_POST['ciudad'];
 $area = $_POST['area'];
 $msj = $_POST['mensaje'];
+$validation = true;
 
 $imagen_respuesta = "https://verdantcomfort.com/resources/images/verdantLogo.png";
 $imgWidth = 230;
@@ -24,15 +25,35 @@ $url_enviado = "https://verdantcomfort.com/";
 $nombre_sitio = "Verdant";
 
 
-if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $message)) {
-  return 0;
+if (preg_match("/((http|https|ftp|ftps)\:\/\/)?(www.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $msj)) {
+   echo "<script>alert('No se han podido registrar los datos, no ingrese valores con los signos $ o /');window.location.href='https://verdantcomfort.com/';</script>";
+}
+
+$nameValidation = str_split($nombre);
+$msjValidation = str_split($msj);
+foreach ($nameValidation as $key => $value) {
+  if($value == "$" || $value == "/"){
+    $validation = FALSE;
+  }
+}
+
+foreach ($msjValidation as $key => $value) {
+  if ($value == "$" || $value == "/") {
+    $validation = FALSE;
+  }
+}
+
+foreach ($nameValidation as $key => $value) {
+  if ($value == "$" || $value == "/") {
+    $validation = FALSE;
+  }
 }
 
 $nombreL= strlen($nombre);
 $cityL = strlen($city);
 
 try {
-  if ($nombreL<=50 && $nombre !="" && $email != "" && $phone != "" && $area != "" && $city != "" && $cityL <= 30) {
+  if ($validation && $nombreL<=50 && $nombre !="" && $email != "" && $phone != "" && $area != "" && $city != "" && $cityL <= 30) {
     if (isset($_POST['enviar'])) {
       $nombre = $_POST['nombre'];
       $email = $_POST['email'];
@@ -76,6 +97,8 @@ try {
     $visitante->FromName = $nombre_sitio;
 
     $mail->AddCC($addCC);
+    $mail->AddCC($addCC1);
+    $mail->AddCC($addCC2);
     $visitante->AddAddress($email);
 
     $mail->IsHTML(true);
@@ -253,7 +276,7 @@ try {
       echo "<script>alert('Los datos han sido registrados');window.location.href='https://verdantcomfort.com/';</script>";
     }
   } else {
-    echo "Data no pass";
+    echo "<script>alert('No se han podido registrar los datos, no ingrese valores con los signos $ o /');window.location.href='https://verdantcomfort.com/';</script>";
   }
 } catch (\Throwable $th) {
   echo "ERROR: " .  $th->getMessage() . " in file " . $th->getFile() . " in line " . $th->getLine();

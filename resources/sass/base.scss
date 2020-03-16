@@ -7,7 +7,7 @@ body {
 a {
   color: black;
   &:hover { 
-    text-decoration: none;
+    text-decoration: none !important;  
   } 
 }
 img {
