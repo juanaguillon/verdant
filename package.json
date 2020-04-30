@@ -40,7 +40,7 @@
     "bootstrap": "^4.4.1",
     "imagefill": "^0.0.3",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-ui": "^1.12.1",
     "sass": "^1.25.0",
     "slick-carousel": "^1.8.1"
